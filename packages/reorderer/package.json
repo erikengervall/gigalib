@@ -1,6 +1,6 @@
 {
   "name": "reorderer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/index.js",
   "repository": "git@github.com:erikengervall/gigalib.git",
   "author": "Erik Engervall <erik.engervall@gmail.com>",
@@ -14,6 +14,6 @@
     "lint": "(cd ../../ && yarn eslint packages/reorderer --ext .ts)"
   },
   "dependencies": {
-    "naive-deepclone": "^1.0.2"
+    "naive-deepclone": "^1.0.3"
   }
 }
