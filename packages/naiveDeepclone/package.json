@@ -7,8 +7,9 @@
   "license": "MIT",
   "description": "A very naive implementation of deeclone",
   "scripts": {
-    "prepublishOnly": "yarn build",
+    "prepublishOnly": "yarn test && yarn build",
     "clean": "../../node_modules/.bin/rimraf dist",
-    "build": "yarn clean && ../../node_modules/.bin/tsc"
+    "build": "yarn clean && ../../node_modules/.bin/tsc",
+    "test": "(cd ../../ && yarn jest packages/naiveDeepclone --bail)"
   }
 }
