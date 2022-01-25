@@ -1,12 +1,12 @@
-import deepclone from 'naive-deepclone' // Looks like we shipped something broken :D
+import { naiveDeepclone } from 'naive-deepclone' // Looks like we shipped something broken :D
 
 /**
- * Updates `listIndex` on the entities provided
+ * Updates `listIndex` on the entities provided to reflect the consequences of the move
  */
 export function handleMove<T extends { listIndex: number }>({
   sortedEntityList,
   fromListIndex,
-  toListIndex
+  toListIndex,
 }: {
   sortedEntityList: T[]
   fromListIndex: number
@@ -17,7 +17,7 @@ export function handleMove<T extends { listIndex: number }>({
    *
    * This is left to the caller to do
    */
-  const unsortedUpdatedEntityList = deepClone(sortedEntityList)
+  const unsortedUpdatedEntityList = naiveDeepclone(sortedEntityList)
 
   if (toListIndex > fromListIndex) {
     // The Entity is moving down the list
@@ -78,6 +78,6 @@ export function handleMove<T extends { listIndex: number }>({
   }
 
   return {
-    unsortedUpdatedEntityList
+    unsortedUpdatedEntityList,
   }
 }
