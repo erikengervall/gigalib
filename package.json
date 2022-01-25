@@ -4,6 +4,7 @@
   "repository": "git@github.com:erikengervall/gigalib.git",
   "author": "Erik Engervall <erik.engervall@gmail.com>",
   "license": "MIT",
+  "private": true,
   "scripts": {
     "lint": "eslint . --ext .ts"
   },
