@@ -1,26 +1,28 @@
 import { naiveDeepclone } from 'naive-deepclone' // Looks like we shipped something broken :D
 
 /**
- * Updates `listIndex` on the entities provided to reflect the consequences of the move
+ * Updates `listIndex` on the list items provided to reflect the consequences of the move
  */
-export function handleMove<T extends { listIndex: number }>({
-  sortedEntityList,
+export function reorderer<T extends { listIndex: number }>({
+  sortedList,
   fromListIndex,
   toListIndex,
 }: {
-  sortedEntityList: T[]
+  sortedList: T[]
   fromListIndex: number
   toListIndex: number
-}) {
+}): {
+  reorderedList: T[]
+} {
   /**
-   * The updated entity list will not preserve order
+   * The updated list will not preserve order
    *
-   * This is left to the caller to do
+   * This is up to the caller
    */
-  const unsortedUpdatedEntityList = naiveDeepclone(sortedEntityList)
+  const reorderedList = naiveDeepclone(sortedList)
 
   if (toListIndex > fromListIndex) {
-    // The Entity is moving down the list
+    // The list item is moving down the list
     /**
      * @example
      * fromListIndex: 1
@@ -42,13 +44,13 @@ export function handleMove<T extends { listIndex: number }>({
      * @example final result
      * [{ li: 0 }, { li: 3 }, { li: 1 }, { li: 2 }, { li: 4 }] */
 
-    unsortedUpdatedEntityList[fromListIndex].listIndex = toListIndex
+    reorderedList[fromListIndex].listIndex = toListIndex
     for (let i = fromListIndex + 1; i <= toListIndex; i++) {
-      // Move all the Entitys between the fromListIndex and toListIndex down by one
-      unsortedUpdatedEntityList[i].listIndex = i - 1
+      // "Move" all the list items between the fromListIndex and toListIndex down by one
+      reorderedList[i].listIndex = i - 1
     }
   } else {
-    // The Entity is moving up the list
+    // The list item is moving up the list
     /**
      * @example
      * fromListIndex: 3
@@ -70,14 +72,18 @@ export function handleMove<T extends { listIndex: number }>({
      * @example final result
      * [{ li: 0 }, { li: 2 }, { li: 3 }, { li: 1 }, { li: 4 }] */
 
-    unsortedUpdatedEntityList[fromListIndex].listIndex = toListIndex
+    reorderedList[fromListIndex].listIndex = toListIndex
     for (let i = fromListIndex - 1; i >= toListIndex; i--) {
-      // Move all the Entitys between the fromListIndex and toListIndex up by one
-      unsortedUpdatedEntityList[i].listIndex = i + 1
+      // "Move" all the list items between the fromListIndex and toListIndex up by one
+      reorderedList[i].listIndex = i + 1
     }
   }
 
   return {
-    unsortedUpdatedEntityList,
+    reorderedList: reorderedList.sort((a, b) => {
+      // ASC? DESC? :think:
+      // some unit tests perhaps?
+      return a.listIndex - b.listIndex
+    }),
   }
 }
