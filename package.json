@@ -5,9 +5,6 @@
   "author": "Erik Engervall <erik.engervall@gmail.com>",
   "license": "MIT",
   "private": true,
-  "scripts": {
-    "lint": "eslint . --ext .ts"
-  },
   "devDependencies": {
     "@babel/core": "^7.16.12",
     "@babel/preset-env": "^7.16.11",

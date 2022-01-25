@@ -7,10 +7,11 @@
   "license": "MIT",
   "description": "Keep a list ordered upon moving a list item in the list",
   "scripts": {
-    "prepublishOnly": "yarn test && yarn build",
+    "prepublishOnly": "yarn lint && yarn test && yarn build",
     "clean": "../../node_modules/.bin/rimraf dist",
     "build": "yarn clean && ../../node_modules/.bin/tsc",
-    "test": "(cd ../../ && yarn jest packages/reorderer --bail)"
+    "test": "(cd ../../ && yarn jest packages/reorderer --bail)",
+    "lint": "(cd ../../ && yarn eslint packages/reorderer --ext .ts)"
   },
   "dependencies": {
     "naive-deepclone": "^1.0.2"
