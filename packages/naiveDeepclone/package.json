@@ -1,6 +1,6 @@
 {
   "name": "naive-deepclone",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": "git@github.com:erikengervall/gigalib.git",
   "author": "Erik Engervall <erik.engervall@gmail.com>",
   "license": "MIT",
