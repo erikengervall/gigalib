@@ -1,0 +1,12 @@
+{
+  "name": "naive-deepclone",
+  "version": "1.0.0",
+  "repository": "git@github.com:erikengervall/gigalib.git",
+  "author": "Erik Engervall <erik.engervall@gmail.com>",
+  "license": "MIT",
+  "description": "A very naive implementation of deeclone",
+  "scripts": {
+    "clean": "../../node_modules/.bin/rimraf dist",
+    "build": "yarn clean && ../../node_modules/.bin/tsc"
+  }
+}
