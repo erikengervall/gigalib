@@ -4,8 +4,17 @@
   "repository": "git@github.com:erikengervall/gigalib.git",
   "author": "Erik Engervall <erik.engervall@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "lint": "eslint . --ext .ts"
+  },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.10.1",
+    "@typescript-eslint/parser": "^5.10.1",
+    "eslint": "^8.7.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
     "lerna": "^4.0.0",
+    "prettier": "^2.5.1",
     "rimraf": "^3.0.2",
     "typescript": "^4.5.5"
   }
