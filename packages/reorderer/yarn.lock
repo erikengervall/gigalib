@@ -2,7 +2,7 @@
 # yarn lockfile v1
 
 
-naive-deepclone@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/naive-deepclone/-/naive-deepclone-1.0.1.tgz#203f95080b9385bf12ae95bf9daf3670f906d6b8"
-  integrity sha512-fH48FFq+YOX46RtJGxIL5hz0o6yjIoE9sw0pywEuL3gESuH7FAAVN74btO/uF/81CVAtCXZiKW0OQn35s1AZpA==
+naive-deepclone@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/naive-deepclone/-/naive-deepclone-1.0.2.tgz#df87338329e3870bcbef1f61cbc60352619955df"
+  integrity sha512-CRHS+5eqEG2W9WGvFd4MjXrXw8l/x6OnBekT/jacI3o9GZqtjyad6HM+jjRaIIq3CeiSkBAnVzOF6azWP5b2Vg==

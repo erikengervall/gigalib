@@ -12,6 +12,6 @@
     "build": "yarn clean && ../../node_modules/.bin/tsc"
   },
   "dependencies": {
-    "naive-deepclone": "^1.0.1"
+    "naive-deepclone": "^1.0.2"
   }
 }
