@@ -7,6 +7,7 @@
   "description": "A very naive implementation of deeclone",
   "scripts": {
     "clean": "../../node_modules/.bin/rimraf dist",
-    "build": "yarn clean && ../../node_modules/.bin/tsc"
+    "build": "yarn clean && ../../node_modules/.bin/tsc",
+    "prepare": "yarn build"
   }
 }
