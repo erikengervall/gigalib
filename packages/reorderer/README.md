@@ -1,6 +1,6 @@
 # Reorderer
 
-![](logos/logo.png)
+![](https://raw.githubusercontent.com/erikengervall/gigalib/main/packages/reorderer/logos/logo.png)
 
 Keep a list ordered upon moving a list item in the list
 
