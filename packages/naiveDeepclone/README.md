@@ -1,5 +1,7 @@
 # Naive deepclone
 
+![](logos/logo.png)
+
 A very naive implementation of deeclone
 
 ## Usage
