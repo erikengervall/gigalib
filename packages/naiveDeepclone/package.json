@@ -10,7 +10,7 @@
     "prepublishOnly": "yarn lint && yarn test && yarn build",
     "clean": "../../node_modules/.bin/rimraf dist",
     "build": "yarn clean && ../../node_modules/.bin/tsc",
-    "test": "(cd ../../ && yarn jest packages/naiveDeepclone --bail)",
-    "lint": "(cd ../../ && yarn eslint packages/reorderer --ext .ts)"
+    "test": "(cd ../../ && yarn jest packages/naiveDeepclone/src --bail)",
+    "lint": "(cd ../../ && yarn eslint packages/naiveDeepclone/src --ext .ts)"
   }
 }
