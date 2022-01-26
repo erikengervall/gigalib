@@ -1,5 +1,7 @@
 # Reorderer
 
+![](logos/logo.png)
+
 Keep a list ordered upon moving a list item in the list
 
 The API is very straight forward
