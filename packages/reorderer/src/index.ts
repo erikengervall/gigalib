@@ -80,10 +80,9 @@ export function reorderer<T extends { listIndex: number }>({
   }
 
   return {
-    reorderedList: reorderedList.sort((a, b) => {
-      // ASC? DESC? :think:
-      // some unit tests perhaps?
-      return a.listIndex - b.listIndex
+    reorderedList: reorderedList.sort((listItemA, listItemB) => {
+      // ASC
+      return listItemA.listIndex - listItemB.listIndex
     }),
   }
 }
