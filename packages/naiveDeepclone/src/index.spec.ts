@@ -12,7 +12,7 @@ describe('naiveDeepclone', () => {
       }
 
       const naiveClone = { ...myObj }
-      myObj.some.nestled = '1337' as any
+      myObj.some.nestled = '1337' as never
 
       expect(naiveClone.some).toMatchInlineSnapshot(`
       Object {
@@ -32,7 +32,7 @@ describe('naiveDeepclone', () => {
 
       const naiveClone = naiveDeepclone(myObj)
 
-      myObj.some = '1337' as any
+      myObj.some = '1337' as never
 
       expect(naiveClone.some).toMatchInlineSnapshot(`
       Object {
