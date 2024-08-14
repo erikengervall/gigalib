@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`customZodErrorMap should set the custom zod error map 1`] = `
+"[
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "number",
+    "path": [
+      "name"
+    ],
+    "message": "Expected string, received number"
+  }
+]"
+`;
+
+exports[`customZodErrorMap should set the custom zod error map 2`] = `
+"[
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "number",
+    "path": [
+      "name"
+    ],
+    "message": "Expected string, received number [DATA]<123>"
+  }
+]"
+`;
+
+exports[`customZodErrorMap should set the custom zod error map 3`] = `
+"[
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "number",
+    "path": [
+      "name"
+    ],
+    "message": "Expected string, received number"
+  }
+]"
+`;
+
+exports[`customZodErrorMap should set the custom zod error map 4`] = `
+"[
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "number",
+    "path": [
+      "name"
+    ],
+    "message": "Expected string, received number"
+  }
+]"
+`;
+
+exports[`customZodErrorMap should set the custom zod error map 5`] = `
+"[
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "number",
+    "path": [
+      "name"
+    ],
+    "message": "Expected string, received number"
+  }
+]"
+`;
+
+exports[`customZodErrorMap should set the custom zod error map 6`] = `
+"[
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "number",
+    "path": [
+      "name"
+    ],
+    "message": "Expected string, received number [DATA]<123>"
+  }
+]"
+`;
+
+exports[`customZodErrorMap should set the custom zod error map 7`] = `
+"[
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "number",
+    "path": [
+      "name"
+    ],
+    "message": "Expected string, received number"
+  }
+]"
+`;

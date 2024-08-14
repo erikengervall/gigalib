@@ -13,26 +13,7 @@ describe('reorderer', () => {
       toListIndex: 2,
     });
 
-    expect(reorderedList).toMatchInlineSnapshot(`
-      Array [
-        Object {
-          "initialListIndex": 1,
-          "listIndex": 0,
-        },
-        Object {
-          "initialListIndex": 2,
-          "listIndex": 1,
-        },
-        Object {
-          "initialListIndex": 0,
-          "listIndex": 2,
-        },
-        Object {
-          "initialListIndex": 3,
-          "listIndex": 3,
-        },
-      ]
-    `);
+    expect(reorderedList).toMatchSnapshot();
   });
 
   it('should be able to move items up the list', () => {
@@ -47,25 +28,6 @@ describe('reorderer', () => {
       toListIndex: 1,
     });
 
-    expect(reorderedList).toMatchInlineSnapshot(`
-      Array [
-        Object {
-          "initialListIndex": 0,
-          "listIndex": 0,
-        },
-        Object {
-          "initialListIndex": 3,
-          "listIndex": 1,
-        },
-        Object {
-          "initialListIndex": 1,
-          "listIndex": 2,
-        },
-        Object {
-          "initialListIndex": 2,
-          "listIndex": 3,
-        },
-      ]
-    `);
+    expect(reorderedList).toMatchSnapshot();
   });
 });

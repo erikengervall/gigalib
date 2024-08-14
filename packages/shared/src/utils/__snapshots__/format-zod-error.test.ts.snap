@@ -1,6 +1,32 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`formatZodError should truncate if more than 100 issues 2`] = `
+exports[`formatZodError should format a ZodError for a union 1`] = `
+"[ZodValidationError for "Options"]
+Invalid literal value, expected "option-1"
+Invalid literal value, expected "option-2""
+`;
+
+exports[`formatZodError should format a ZodError with an identity 1`] = `
+"[ZodValidationError for "Person"]
+Expected string, received number at "name"
+Required at "age"
+Required at "nested""
+`;
+
+exports[`formatZodError should format a ZodError with several errors 1`] = `
+"[ZodValidationError for "Person"]
+String must contain at least 5 character(s) at "name"
+Number must be greater than or equal to 33 at "age""
+`;
+
+exports[`formatZodError should format a ZodError without an identity 1`] = `
+"[ZodValidationError for "Person"]
+Expected string, received number at "name"
+Required at "age"
+Required at "nested""
+`;
+
+exports[`formatZodError should truncate if more than 100 issues 1`] = `
 "[ZodValidationError for "Person"]
 String must contain at least 5 character(s) at "[0].name"
 Number must be greater than or equal to 33 at "[0].age"
@@ -103,3 +129,5 @@ Number must be greater than or equal to 33 at "[48].age"
 String must contain at least 5 character(s) at "[49].name"
 Number must be greater than or equal to 33 at "[49].age""
 `;
+
+exports[`formatZodError should truncate if more than 100 issues: 101 1`] = `101`;

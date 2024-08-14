@@ -20,11 +20,7 @@ describe('formatZodError', () => {
 
     const result = formatZodError(invalidOptions.error, 'Options');
 
-    expect(result).toMatchInlineSnapshot(`
-      "[ZodValidationError for "Options"]
-      Invalid literal value, expected "option-1"
-      Invalid literal value, expected "option-2""
-    `);
+    expect(result).toMatchSnapshot();
   });
 
   it('should format a ZodError with an identity', () => {
@@ -35,12 +31,7 @@ describe('formatZodError', () => {
 
     const result = formatZodError(invalidPerson.error, 'Person');
 
-    expect(result).toMatchInlineSnapshot(`
-      "[ZodValidationError for "Person"]
-      Expected string, received number at "name"
-      Required at "age"
-      Required at "nested""
-    `);
+    expect(result).toMatchSnapshot();
   });
 
   it('should format a ZodError without an identity', () => {
@@ -51,12 +42,7 @@ describe('formatZodError', () => {
 
     const result = formatZodError(invalidPerson.error, 'Person');
 
-    expect(result).toMatchInlineSnapshot(`
-      "[ZodValidationError for "Person"]
-      Expected string, received number at "name"
-      Required at "age"
-      Required at "nested""
-    `);
+    expect(result).toMatchSnapshot();
   });
 
   it('should format a ZodError with several errors', () => {
@@ -74,11 +60,7 @@ describe('formatZodError', () => {
 
     const result = formatZodError(invalidPerson.error, 'Person');
 
-    expect(result).toMatchInlineSnapshot(`
-      "[ZodValidationError for "Person"]
-      String must contain at least 5 character(s) at "name"
-      Number must be greater than or equal to 33 at "age""
-    `);
+    expect(result).toMatchSnapshot();
   });
 
   it('should truncate if more than 100 issues', () => {
@@ -100,7 +82,7 @@ describe('formatZodError', () => {
 
     const result = formatZodError(invalidPerson.error, 'Person');
 
-    expect(result.split('\n').length).toMatchInlineSnapshot(`101`);
+    expect(result.split('\n').length).toMatchSnapshot(`101`);
     expect(result).toMatchSnapshot();
   });
 });
