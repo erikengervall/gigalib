@@ -1,4 +1,4 @@
-# Naive deepclone
+# Naive deepclone (moved to @engervall/shared)
 
 ![](https://raw.githubusercontent.com/erikengervall/gigalib/main/packages/naive-deepclone/logos/logo.png)
 
@@ -13,9 +13,9 @@ const myObject = {
       nested: 1337,
     },
   },
-}
+};
 
-const deepclone = naiveDeepclone(myObject)
+const deepclone = naiveDeepclone(myObject);
 
 // `deepclone` has no references to `myObject`
 ```
