@@ -1,7 +1,7 @@
 import { SHARED_EXPORTS } from './create-shared-file';
+import { camelCase } from '@engervall/shared';
 
 import { MRGenOptions } from '../types/mrgen-options';
-import { camelCase } from './change-case';
 import { createFileWithContent } from './create-file-with-content';
 import { fileName } from './file-name';
 import { formatFile } from './format-file';

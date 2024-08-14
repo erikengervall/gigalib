@@ -1,5 +1,6 @@
+import { pascalCase } from '@engervall/shared';
+
 import { MRGenOptions } from '../types/mrgen-options';
-import { pascalCase } from './change-case';
 import { createFileWithContent } from './create-file-with-content';
 import { formatFile } from './format-file';
 import { getAPIType } from './get-api-type';

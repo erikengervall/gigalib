@@ -1,7 +1,7 @@
 import { SHARED_EXPORTS } from './create-shared-file';
+import { pascalCase } from '@engervall/shared';
 
 import { MRGenOptions } from '../types/mrgen-options';
-import { pascalCase } from './change-case';
 import { fileName } from './file-name';
 
 export function getAPIType(options: MRGenOptions) {
