@@ -1,6 +1,6 @@
 {
   "name": "reorderer",
-  "version": "1.0.7-alpha.0",
+  "version": "1.0.7",
   "main": "dist/index.js",
   "repository": "git@github.com:erikengervall/gigalib.git",
   "author": "Erik Engervall <erik.engervall@gmail.com>",
@@ -22,7 +22,7 @@
     "lint": "yarn eslint)"
   },
   "dependencies": {
-    "naive-deepclone": "^1.0.8-alpha.0"
+    "naive-deepclone": "^1.0.8"
   },
   "gitHead": "6b2059c1d922df4567fe963d4f7a6e0cd2c14400"
 }
