@@ -1,4 +1,4 @@
-import { reorderer } from './index'
+import { reorderer } from './index';
 
 describe('reorderer', () => {
   it('should be able to move items down the list', () => {
@@ -11,7 +11,7 @@ describe('reorderer', () => {
       ],
       fromListIndex: 0,
       toListIndex: 2,
-    })
+    });
 
     expect(reorderedList).toMatchInlineSnapshot(`
       Array [
@@ -32,8 +32,8 @@ describe('reorderer', () => {
           "listIndex": 3,
         },
       ]
-    `)
-  })
+    `);
+  });
 
   it('should be able to move items up the list', () => {
     const { reorderedList } = reorderer({
@@ -45,7 +45,7 @@ describe('reorderer', () => {
       ],
       fromListIndex: 3,
       toListIndex: 1,
-    })
+    });
 
     expect(reorderedList).toMatchInlineSnapshot(`
       Array [
@@ -66,6 +66,6 @@ describe('reorderer', () => {
           "listIndex": 3,
         },
       ]
-    `)
-  })
-})
+    `);
+  });
+});

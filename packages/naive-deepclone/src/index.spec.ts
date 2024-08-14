@@ -1,4 +1,4 @@
-import { naiveDeepclone } from './index'
+import { naiveDeepclone } from './index';
 
 describe('handle mutations within the nestled structure', () => {
   it('expected outcome if not deepclone', () => {
@@ -8,17 +8,17 @@ describe('handle mutations within the nestled structure', () => {
           value: 1337,
         },
       },
-    }
+    };
 
-    const naiveClone = { ...myObj }
-    myObj.some.nestled = '1337' as never
+    const naiveClone = { ...myObj };
+    myObj.some.nestled = '1337' as never;
 
     expect(naiveClone.some).toMatchInlineSnapshot(`
       Object {
         "nestled": "1337",
       }
-    `)
-  })
+    `);
+  });
 
   it('should deepclone objects, modifying values are not propagated', () => {
     const myObj = {
@@ -27,11 +27,11 @@ describe('handle mutations within the nestled structure', () => {
           value: 1337,
         },
       },
-    }
+    };
 
-    const naiveClone = naiveDeepclone(myObj)
+    const naiveClone = naiveDeepclone(myObj);
 
-    myObj.some = '1337' as never
+    myObj.some = '1337' as never;
 
     expect(naiveClone.some).toMatchInlineSnapshot(`
       Object {
@@ -39,6 +39,6 @@ describe('handle mutations within the nestled structure', () => {
           "value": 1337,
         },
       }
-    `)
-  })
-})
+    `);
+  });
+});

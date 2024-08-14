@@ -1,4 +1,4 @@
-import { naiveDeepclone } from 'naive-deepclone' // Looks like we shipped something broken :D
+import { naiveDeepclone } from 'naive-deepclone';
 
 /**
  * Updates `listIndex` on the list items provided to reflect the consequences of the move
@@ -8,18 +8,18 @@ export function reorderer<T extends { listIndex: number }>({
   fromListIndex,
   toListIndex,
 }: {
-  sortedList: T[]
-  fromListIndex: number
-  toListIndex: number
+  sortedList: T[];
+  fromListIndex: number;
+  toListIndex: number;
 }): {
-  reorderedList: T[]
+  reorderedList: T[];
 } {
   /**
    * The updated list will not preserve order
    *
    * This is up to the caller
    */
-  const reorderedList = naiveDeepclone(sortedList)
+  const reorderedList = naiveDeepclone(sortedList);
 
   if (toListIndex > fromListIndex) {
     // The list item is moving down the list
@@ -44,10 +44,10 @@ export function reorderer<T extends { listIndex: number }>({
      * @example final result
      * [{ li: 0 }, { li: 3 }, { li: 1 }, { li: 2 }, { li: 4 }] */
 
-    reorderedList[fromListIndex].listIndex = toListIndex
+    reorderedList[fromListIndex].listIndex = toListIndex;
     for (let i = fromListIndex + 1; i <= toListIndex; i++) {
       // "Move" all the list items between the fromListIndex and toListIndex down by one
-      reorderedList[i].listIndex = i - 1
+      reorderedList[i].listIndex = i - 1;
     }
   } else {
     // The list item is moving up the list
@@ -72,17 +72,17 @@ export function reorderer<T extends { listIndex: number }>({
      * @example final result
      * [{ li: 0 }, { li: 2 }, { li: 3 }, { li: 1 }, { li: 4 }] */
 
-    reorderedList[fromListIndex].listIndex = toListIndex
+    reorderedList[fromListIndex].listIndex = toListIndex;
     for (let i = fromListIndex - 1; i >= toListIndex; i--) {
       // "Move" all the list items between the fromListIndex and toListIndex up by one
-      reorderedList[i].listIndex = i + 1
+      reorderedList[i].listIndex = i + 1;
     }
   }
 
   return {
     reorderedList: reorderedList.sort((listItemA, listItemB) => {
       // ASC
-      return listItemA.listIndex - listItemB.listIndex
+      return listItemA.listIndex - listItemB.listIndex;
     }),
-  }
+  };
 }

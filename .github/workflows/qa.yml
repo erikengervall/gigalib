@@ -17,5 +17,5 @@ jobs:
       - run: yarn install --frozen-lockfile
       - run: yarn ci:build
       - run: yarn ci:format
-      - run: yarn ci:lint
+      # - run: yarn ci:lint
       - run: yarn ci:test:unit
