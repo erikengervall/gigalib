@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should return file name withExt and withoutExt 1`] = `
+{
+  "withExt": "test.txt",
+  "withoutExt": "test",
+}
+`;
+
+exports[`should return file name withExt and withoutExt 2`] = `
+{
+  "withExt": "test.txt",
+  "withoutExt": "test",
+}
+`;
+
+exports[`should return file name withExt and withoutExt 3`] = `
+{
+  "withExt": "test.txt",
+  "withoutExt": "test",
+}
+`;
+
+exports[`should return file name withExt and withoutExt 4`] = `
+{
+  "withExt": "test",
+  "withoutExt": "test",
+}
+`;

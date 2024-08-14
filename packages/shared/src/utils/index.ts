@@ -1,5 +1,6 @@
 export * from './array-dedup';
 export * from './array-pick-at';
+export * from './change-case';
 export * from './create-alt-from-src';
 export * from './custom-zod-error-map';
 export * from './execution-time';
