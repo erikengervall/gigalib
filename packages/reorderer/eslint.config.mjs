@@ -1,5 +1,3 @@
 import defaultConfig from '../../eslint.config.mjs';
 
-export default {
-  ...defaultConfig,
-};
+export default [...defaultConfig];

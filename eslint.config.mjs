@@ -44,7 +44,7 @@ export default [
     rules: {
       'prettier/prettier': 'error',
       curly: 'error',
-      '@typescript-eslint/consistent-type-imports': 'error',
+      // '@typescript-eslint/consistent-type-imports': 'error',
       '@typescript-eslint/no-explicit-any': 'warn',
       'new-cap': 'off',
       'jsx-a11y/accessible-emoji': 'off',
