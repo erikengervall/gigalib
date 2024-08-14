@@ -1,10 +1,8 @@
-import { fixupConfigRules, fixupPluginRules } from '@eslint/compat';
+import { fixupConfigRules } from '@eslint/compat';
 import { FlatCompat } from '@eslint/eslintrc';
-import js from '@eslint/js';
-import typescriptEslint from '@typescript-eslint/eslint-plugin';
-import tsParser from '@typescript-eslint/parser';
+import pluginJs from '@eslint/js';
+import { default as tsParser } from '@typescript-eslint/parser';
 import prettier from 'eslint-plugin-prettier';
-import globals from 'globals';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -12,8 +10,8 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const compat = new FlatCompat({
   baseDirectory: __dirname,
-  recommendedConfig: js.configs.recommended,
-  allConfig: js.configs.all,
+  recommendedConfig: pluginJs.configs.recommended,
+  allConfig: pluginJs.configs.all,
 });
 
 export default [
@@ -25,21 +23,20 @@ export default [
       'eslint:recommended',
       'plugin:@typescript-eslint/eslint-recommended',
       'plugin:@typescript-eslint/recommended',
-      'plugin:react-hooks/recommended',
       'prettier',
     ),
   ),
   {
     plugins: {
-      '@typescript-eslint': fixupPluginRules(typescriptEslint),
+      // '@typescript-eslint': fixupPluginRules(typescriptEslint),
       prettier,
     },
 
     languageOptions: {
-      globals: {
-        ...globals.browser,
-        ...globals.node,
-      },
+      // globals: {
+      //   ...globals.browser,
+      //   ...globals.node,
+      // },
 
       parser: tsParser,
     },
@@ -49,7 +46,6 @@ export default [
       curly: 'error',
       '@typescript-eslint/consistent-type-imports': 'error',
       '@typescript-eslint/no-explicit-any': 'warn',
-      'react/prop-types': 'off',
       'new-cap': 'off',
       'jsx-a11y/accessible-emoji': 'off',
       'jsx-a11y/click-events-have-key-events': 'off',

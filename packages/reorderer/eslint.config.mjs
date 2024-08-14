@@ -1,3 +1,5 @@
-module.exports = {
-  ...require('../../eslint.config.mjs'),
+import defaultConfig from '../../eslint.config.mjs';
+
+export default {
+  ...defaultConfig,
 };

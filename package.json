@@ -21,6 +21,7 @@
     "reinstall": "lerna run reinstall && rm -rf node_modules && yarn install"
   },
   "devDependencies": {
+    "@eslint/compat": "^1.1.1",
     "@trivago/prettier-plugin-sort-imports": "^4.3.0",
     "@types/jest": "^29.5.12",
     "@types/node": "^22.2.0",
