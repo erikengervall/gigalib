@@ -8,6 +8,10 @@
   "workspaces": [
     "packages/*"
   ],
+  "scripts": {
+    "clean": "lerna run clean",
+    "reinstall": "lerna run reinstall && rm -rf node_modules && yarn install"
+  },
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "^4.3.0",
     "@types/jest": "^29.5.12",

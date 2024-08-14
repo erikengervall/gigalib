@@ -1,6 +1,6 @@
 {
   "name": "@engervall/shared",
-  "version": "1.0.0",
+  "version": "1.0.1-alpha.0",
   "main": "dist/index.js",
   "scripts": {
     "----- CI": "",
@@ -12,7 +12,8 @@
     "dev": "rm -rf dist && tsc --watch",
     "----- MISC": "",
     "format:write": "prettier --write './src/**/*.{ts,tsx}'",
-    "clean:reset": "rm -rf dist"
+    "clean": "rm -rf dist",
+    "reinstall": "yarn clean && rm -rf node_modules"
   },
   "dependencies": {
     "qs": "^6.11.2",
