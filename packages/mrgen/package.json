@@ -12,7 +12,8 @@
     "dev": "rm -rf dist && tsc --watch",
     "----- MISC": "",
     "format:write": "prettier --write './src/**/*.{ts,tsx}'",
-    "clean:reset": "rm -rf node_modules tsconfig.tsbuildinfo yarn-error.log dist"
+    "clean": "rm -rf dist",
+    "reinstall": "yarn clean && rm -rf node_modules"
   },
   "dependencies": {
     "qs": "^6.11.2",

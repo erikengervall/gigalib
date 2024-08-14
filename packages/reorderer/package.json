@@ -9,6 +9,7 @@
   "scripts": {
     "prepublishOnly": "yarn lint && yarn test && yarn build",
     "clean": "rm -rf dist",
+    "reinstall": "yarn clean && rm -rf node_modules",
     "build": "yarn clean && yarn tsc",
     "test": "yarn jest)",
     "lint": "yarn eslint)"
