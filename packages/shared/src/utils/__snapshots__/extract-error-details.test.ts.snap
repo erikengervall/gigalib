@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`extractErrorDetails unknown errors with content should return the error name and message when the error is a boolean 1`] = `
+{
+  "errorMessage": "true",
+  "errorName": "An error occurred",
+}
+`;
+
+exports[`extractErrorDetails unknown errors with content should return the error name and message when the error is a function 1`] = `
+{
+  "errorMessage": "() => void 0",
+  "errorName": "An error occurred",
+}
+`;
+
+exports[`extractErrorDetails unknown errors with content should return the error name and message when the error is a number 1`] = `
+{
+  "errorMessage": "123",
+  "errorName": "An error occurred",
+}
+`;
+
+exports[`extractErrorDetails unknown errors with content should return the error name and message when the error is an array 1`] = `
+{
+  "errorMessage": "["foo","bar"]",
+  "errorName": "An error occurred",
+}
+`;
+
+exports[`extractErrorDetails unknown errors with content should return the error name and message when the error is an object 1`] = `
+{
+  "errorMessage": "{"foo":"bar"}",
+  "errorName": "An error occurred",
+}
+`;
+
+exports[`extractErrorDetails unknown errors with content should return the error name and message when the error is string 1`] = `
+{
+  "errorMessage": ""This is an error"",
+  "errorName": "An error occurred",
+}
+`;
+
+exports[`extractErrorDetails unknown errors with empty content should return the error name and message when the error is an empty string 1`] = `
+{
+  "errorMessage": "Unknown error (with empty content)",
+  "errorName": "An error occurred",
+}
+`;
+
+exports[`extractErrorDetails unknown errors with empty content should return the error name and message when the error is null 1`] = `
+{
+  "errorMessage": "Unknown error (with empty content)",
+  "errorName": "An error occurred",
+}
+`;
+
+exports[`extractErrorDetails unknown errors with empty content should return the error name and message when the error is undefined 1`] = `
+{
+  "errorMessage": "Unknown error (with empty content)",
+  "errorName": "An error occurred",
+}
+`;

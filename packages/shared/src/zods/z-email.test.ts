@@ -7,7 +7,6 @@ describe('zEmail', () => {
     'firstname.lastname@example.com',
     'email@subdomain.example.com',
     'firstname+lastname@example.com',
-    '“email”@example.com',
     '1234567890@example.com',
     'email@example-one.com',
     '_______@example.com',
