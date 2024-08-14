@@ -11,6 +11,7 @@ export * from './get-random-number';
 export * from './http-error-status-codes';
 export * from './lowercase';
 export * from './reason-phrase-for-status-code-map';
+export * from './reorderer';
 export * from './truncate-string';
 export * from './upper-case-first-character';
 export * from './upper-case-first-character-all-words';
