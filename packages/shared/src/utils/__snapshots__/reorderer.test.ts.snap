@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`reorderer should be able to move items down the list 1`] = `
+[
+  {
+    "initialListIndex": 1,
+    "listIndex": 0,
+  },
+  {
+    "initialListIndex": 2,
+    "listIndex": 1,
+  },
+  {
+    "initialListIndex": 0,
+    "listIndex": 2,
+  },
+  {
+    "initialListIndex": 3,
+    "listIndex": 3,
+  },
+]
+`;
+
+exports[`reorderer should be able to move items up the list 1`] = `
+[
+  {
+    "initialListIndex": 0,
+    "listIndex": 0,
+  },
+  {
+    "initialListIndex": 3,
+    "listIndex": 1,
+  },
+  {
+    "initialListIndex": 1,
+    "listIndex": 2,
+  },
+  {
+    "initialListIndex": 2,
+    "listIndex": 3,
+  },
+]
+`;
