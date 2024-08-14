@@ -21,6 +21,5 @@
     "qs": "^6.11.2",
     "zod": "^3.21.4",
     "zod-validation-error": "^1.3.1"
-  },
-  "gitHead": "7df3b718e15803297c98bf23dcb460410a7150b9"
+  }
 }
