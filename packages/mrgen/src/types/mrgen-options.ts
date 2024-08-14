@@ -7,6 +7,8 @@ type RequireAtLeastOne<T, Keys extends keyof T = keyof T> = Pick<
   }[Keys];
 
 export type MRGenOptions = {
+  dryRun?: boolean;
+
   data: RequireAtLeastOne<{
     params: boolean;
     payload: boolean;

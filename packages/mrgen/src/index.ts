@@ -1,4 +1,5 @@
 import { createSharedFile } from './utils/create-shared-file';
+import { pascalCase } from '@engervall/shared';
 
 import { MRGenOptions } from './types/mrgen-options';
 import { createBackendFile } from './utils/create-backend-file';
@@ -6,6 +7,11 @@ import { createFrontendFile } from './utils/create-frontend-file';
 
 export async function MRGen(options: MRGenOptions) {
   console.debug('options', options);
+
+  if (options.dryRun) {
+    console.log('Dry run', pascalCase('pascal-case-me-pls'));
+    return;
+  }
 
   createSharedFile(options);
   createBackendFile(options);
