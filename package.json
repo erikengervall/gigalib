@@ -14,6 +14,8 @@
     "ci:format": "lerna run ci:format",
     "ci:lint": "lerna run ci:lint",
     "ci:test:unit": "lerna run ci:test:unit",
+    "ci:release": "       lerna publish --force-publish=\"*\" --yes",
+    "ci:release:canary": "lerna publish --force-publish=\"*\" --yes --preid `git rev-parse --short HEAD` --canary",
     "----- MISC": "",
     "clean": "lerna run clean",
     "reinstall": "lerna run reinstall && rm -rf node_modules && yarn install"

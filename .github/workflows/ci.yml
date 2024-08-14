@@ -19,3 +19,23 @@ jobs:
       - run: yarn ci:format
       # - run: yarn ci:lint
       - run: yarn ci:test:unit
+
+  ####### Publish canary release to npm
+  publish_canary:
+    name: Publish canary to npm
+    runs-on: ubuntu-latest
+    needs: [qa]
+    if:
+      github.repository == 'erikengervall/gigalib' && startsWith(github.ref,
+      'refs/heads/master')
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          registry-url: https://registry.npmjs.org/
+      - run: yarn install
+      - env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: yarn ci:release:canary
