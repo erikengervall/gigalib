@@ -27,7 +27,7 @@ jobs:
     needs: [qa]
     if:
       github.repository == 'erikengervall/gigalib' && startsWith(github.ref,
-      'refs/heads/master')
+      'refs/heads/main')
 
     steps:
       - uses: actions/checkout@v4
