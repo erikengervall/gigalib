@@ -13,7 +13,7 @@
     "ci:lint": "eslint 'src/**/*.{ts,tsx}'",
     "ci:test:unit": "jest",
     "----- HOOKS": "",
-    "prepublishOnly": "yarn build",
+    "prepublishOnly": "yarn ci:build",
     "----- MISC": "",
     "clean": "rm -rf dist",
     "reinstall": "yarn clean && rm -rf node_modules",
@@ -23,6 +23,5 @@
   },
   "dependencies": {
     "naive-deepclone": "^1.0.8"
-  },
-  "gitHead": "6b2059c1d922df4567fe963d4f7a6e0cd2c14400"
+  }
 }

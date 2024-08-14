@@ -13,13 +13,12 @@
     "ci:lint": "eslint 'src/**/*.{ts,tsx}'",
     "ci:test:unit": "jest",
     "----- HOOKS": "",
-    "prepublishOnly": "yarn build",
+    "prepublishOnly": "yarn ci:build",
     "----- MISC": "",
     "clean": "rm -rf dist",
     "reinstall": "yarn clean && rm -rf node_modules",
     "build": "yarn clean && yarn tsc",
     "test": "yarn jest)",
     "lint": "yarn eslint)"
-  },
-  "gitHead": "6b2059c1d922df4567fe963d4f7a6e0cd2c14400"
+  }
 }
