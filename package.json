@@ -9,6 +9,12 @@
     "packages/*"
   ],
   "scripts": {
+    "----- CI": "",
+    "ci:build": "lerna run ci:build",
+    "ci:format": "lerna run ci:format",
+    "ci:lint": "lerna run ci:lint",
+    "ci:test:unit": "lerna run ci:test:unit",
+    "----- MISC": "",
     "clean": "lerna run clean",
     "reinstall": "lerna run reinstall && rm -rf node_modules && yarn install"
   },

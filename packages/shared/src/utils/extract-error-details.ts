@@ -1,10 +1,10 @@
-import { copywrite } from '../constants';
-
 type ErrorDetails = {
   errorMessage: string;
   errorName: string;
   errorStack?: string;
 };
+
+const GENERIC_ERROR_MESSAGE = 'An error occurred';
 
 export function extractErrorDetails(error: unknown): ErrorDetails {
   if (error instanceof Error) {
@@ -18,19 +18,19 @@ export function extractErrorDetails(error: unknown): ErrorDetails {
   if (!error) {
     return {
       errorMessage: 'Unknown error (with empty content)',
-      errorName: copywrite.genericErrorMessage,
+      errorName: GENERIC_ERROR_MESSAGE,
     };
   }
 
   if (typeof error !== 'string' && typeof error !== 'object') {
     return {
       errorMessage: `${error ?? 'Unknown error (with unknown type)'}`,
-      errorName: copywrite.genericErrorMessage,
+      errorName: GENERIC_ERROR_MESSAGE,
     };
   }
 
   return {
     errorMessage: JSON.stringify(error),
-    errorName: copywrite.genericErrorMessage,
+    errorName: GENERIC_ERROR_MESSAGE,
   };
 }
