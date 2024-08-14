@@ -8,10 +8,10 @@
   "description": "Keep a list ordered upon moving a list item in the list",
   "scripts": {
     "prepublishOnly": "yarn lint && yarn test && yarn build",
-    "clean": "../../node_modules/.bin/rimraf dist",
-    "build": "yarn clean && ../../node_modules/.bin/tsc",
-    "test": "(cd ../../ && yarn jest packages/reorderer/src --bail)",
-    "lint": "(cd ../../ && yarn eslint packages/reorderer/src --ext .ts)"
+    "clean": "rm -rf dist",
+    "build": "yarn clean && yarn tsc",
+    "test": "yarn jest)",
+    "lint": "yarn eslint)"
   },
   "dependencies": {
     "naive-deepclone": "^1.0.5"

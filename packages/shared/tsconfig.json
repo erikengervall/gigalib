@@ -1,0 +1,34 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "declaration": true,
+    "lib": ["es2021"],
+    "module": "CommonJS",
+    "noEmit": false,
+    "sourceMap": true,
+    "target": "ES6",
+
+    "baseUrl": "src",
+    "outDir": "dist",
+    "rootDir": "src"
+  },
+  "include": ["src", "../../scripts/change-case.ts"],
+  "exclude": [
+    "_warmup",
+    ".cache",
+    ".next",
+    ".serverless",
+    ".vscode",
+    ".vscode",
+    ".webpack",
+    "*.dist*",
+    "*.spec*",
+    "*.test*",
+    "build",
+    "coverage",
+    "cypress-coverage",
+    "dist",
+    "jest-coverage",
+    "node_modules"
+  ]
+}

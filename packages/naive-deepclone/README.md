@@ -1,6 +1,6 @@
 # Naive deepclone
 
-![](https://raw.githubusercontent.com/erikengervall/gigalib/main/packages/naiveDeepclone/logos/logo.png)
+![](https://raw.githubusercontent.com/erikengervall/gigalib/main/packages/naive-deepclone/logos/logo.png)
 
 A very naive implementation of deeclone
 
