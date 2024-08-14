@@ -1,4 +1,4 @@
-# Reorderer (moved to @engervall/shared)
+# Reorderer (moved to [@engervall/shared](https://www.npmjs.com/package/@engervall/shared))
 
 ![](https://raw.githubusercontent.com/erikengervall/gigalib/main/packages/reorderer/logos/logo.png)
 

@@ -1,4 +1,4 @@
-# Naive deepclone (moved to @engervall/shared)
+# Naive deepclone (moved to [@engervall/shared](https://www.npmjs.com/package/@engervall/shared))
 
 ![](https://raw.githubusercontent.com/erikengervall/gigalib/main/packages/naive-deepclone/logos/logo.png)
 
