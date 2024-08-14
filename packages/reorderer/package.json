@@ -12,8 +12,9 @@
     "ci:format": "prettier --check './src/**/*.{ts,tsx}' --ignore-path ../../.prettierignore",
     "ci:lint": "eslint 'src/**/*.{ts,tsx}'",
     "ci:test:unit": "jest",
+    "----- HOOKS": "",
+    "prepublishOnly": "yarn build",
     "----- MISC": "",
-    "prepublishOnly": "yarn lint && yarn test && yarn build",
     "clean": "rm -rf dist",
     "reinstall": "yarn clean && rm -rf node_modules",
     "build": "yarn clean && yarn tsc",
@@ -22,5 +23,6 @@
   },
   "dependencies": {
     "naive-deepclone": "^1.0.8-alpha.0"
-  }
+  },
+  "gitHead": "6b2059c1d922df4567fe963d4f7a6e0cd2c14400"
 }
