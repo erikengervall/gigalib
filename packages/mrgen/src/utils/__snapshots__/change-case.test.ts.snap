@@ -1,0 +1,331 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should convert: 123 -> camelCase 1`] = `"123"`;
+
+exports[`should convert: 123 -> capitalCase 1`] = `"123"`;
+
+exports[`should convert: 123 -> constantCase 1`] = `"123"`;
+
+exports[`should convert: 123 -> dotCase 1`] = `"123"`;
+
+exports[`should convert: 123 -> kebabCase 1`] = `"123"`;
+
+exports[`should convert: 123 -> pascalCase 1`] = `"123"`;
+
+exports[`should convert: 123 -> pascalSnakeCase 1`] = `"123"`;
+
+exports[`should convert: 123 -> pathCase 1`] = `"123"`;
+
+exports[`should convert: 123 -> sentenceCase 1`] = `"123"`;
+
+exports[`should convert: 123 -> snakeCase 1`] = `"123"`;
+
+exports[`should convert: 123 -> trainCase 1`] = `"123"`;
+
+exports[`should convert: 123_456 -> camelCase 1`] = `"123_456"`;
+
+exports[`should convert: 123_456 -> capitalCase 1`] = `"123 456"`;
+
+exports[`should convert: 123_456 -> constantCase 1`] = `"123_456"`;
+
+exports[`should convert: 123_456 -> dotCase 1`] = `"123.456"`;
+
+exports[`should convert: 123_456 -> kebabCase 1`] = `"123-456"`;
+
+exports[`should convert: 123_456 -> pascalCase 1`] = `"123_456"`;
+
+exports[`should convert: 123_456 -> pascalSnakeCase 1`] = `"123_456"`;
+
+exports[`should convert: 123_456 -> pathCase 1`] = `"123/456"`;
+
+exports[`should convert: 123_456 -> sentenceCase 1`] = `"123 456"`;
+
+exports[`should convert: 123_456 -> snakeCase 1`] = `"123_456"`;
+
+exports[`should convert: 123_456 -> trainCase 1`] = `"123-456"`;
+
+exports[`should convert: 123_456_789 -> camelCase 1`] = `"123_456_789"`;
+
+exports[`should convert: 123_456_789 -> capitalCase 1`] = `"123 456 789"`;
+
+exports[`should convert: 123_456_789 -> constantCase 1`] = `"123_456_789"`;
+
+exports[`should convert: 123_456_789 -> dotCase 1`] = `"123.456.789"`;
+
+exports[`should convert: 123_456_789 -> kebabCase 1`] = `"123-456-789"`;
+
+exports[`should convert: 123_456_789 -> pascalCase 1`] = `"123_456_789"`;
+
+exports[`should convert: 123_456_789 -> pascalSnakeCase 1`] = `"123_456_789"`;
+
+exports[`should convert: 123_456_789 -> pathCase 1`] = `"123/456/789"`;
+
+exports[`should convert: 123_456_789 -> sentenceCase 1`] = `"123 456 789"`;
+
+exports[`should convert: 123_456_789 -> snakeCase 1`] = `"123_456_789"`;
+
+exports[`should convert: 123_456_789 -> trainCase 1`] = `"123-456-789"`;
+
+exports[`should convert: hello_world -> camelCase 1`] = `"helloWorld"`;
+
+exports[`should convert: hello_world -> capitalCase 1`] = `"Hello World"`;
+
+exports[`should convert: hello_world -> constantCase 1`] = `"HELLO_WORLD"`;
+
+exports[`should convert: hello_world -> dotCase 1`] = `"hello.world"`;
+
+exports[`should convert: hello_world -> kebabCase 1`] = `"hello-world"`;
+
+exports[`should convert: hello_world -> pascalCase 1`] = `"HelloWorld"`;
+
+exports[`should convert: hello_world -> pascalSnakeCase 1`] = `"Hello_World"`;
+
+exports[`should convert: hello_world -> pathCase 1`] = `"hello/world"`;
+
+exports[`should convert: hello_world -> sentenceCase 1`] = `"Hello world"`;
+
+exports[`should convert: hello_world -> snakeCase 1`] = `"hello_world"`;
+
+exports[`should convert: hello_world -> trainCase 1`] = `"Hello-World"`;
+
+exports[`should convert: hello_world-foo -> camelCase 1`] = `"helloWorldFoo"`;
+
+exports[`should convert: hello_world-foo -> capitalCase 1`] = `"Hello World Foo"`;
+
+exports[`should convert: hello_world-foo -> constantCase 1`] = `"HELLO_WORLD_FOO"`;
+
+exports[`should convert: hello_world-foo -> dotCase 1`] = `"hello.world.foo"`;
+
+exports[`should convert: hello_world-foo -> kebabCase 1`] = `"hello-world-foo"`;
+
+exports[`should convert: hello_world-foo -> pascalCase 1`] = `"HelloWorldFoo"`;
+
+exports[`should convert: hello_world-foo -> pascalSnakeCase 1`] = `"Hello_World_Foo"`;
+
+exports[`should convert: hello_world-foo -> pathCase 1`] = `"hello/world/foo"`;
+
+exports[`should convert: hello_world-foo -> sentenceCase 1`] = `"Hello world foo"`;
+
+exports[`should convert: hello_world-foo -> snakeCase 1`] = `"hello_world_foo"`;
+
+exports[`should convert: hello_world-foo -> trainCase 1`] = `"Hello-World-Foo"`;
+
+exports[`should convert: hello_world-foo-123-bar -> camelCase 1`] = `"helloWorldFoo_123Bar"`;
+
+exports[`should convert: hello_world-foo-123-bar -> capitalCase 1`] = `"Hello World Foo 123 Bar"`;
+
+exports[`should convert: hello_world-foo-123-bar -> constantCase 1`] = `"HELLO_WORLD_FOO_123_BAR"`;
+
+exports[`should convert: hello_world-foo-123-bar -> dotCase 1`] = `"hello.world.foo.123.bar"`;
+
+exports[`should convert: hello_world-foo-123-bar -> kebabCase 1`] = `"hello-world-foo-123-bar"`;
+
+exports[`should convert: hello_world-foo-123-bar -> pascalCase 1`] = `"HelloWorldFoo_123Bar"`;
+
+exports[`should convert: hello_world-foo-123-bar -> pascalSnakeCase 1`] = `"Hello_World_Foo_123_Bar"`;
+
+exports[`should convert: hello_world-foo-123-bar -> pathCase 1`] = `"hello/world/foo/123/bar"`;
+
+exports[`should convert: hello_world-foo-123-bar -> sentenceCase 1`] = `"Hello world foo 123 bar"`;
+
+exports[`should convert: hello_world-foo-123-bar -> snakeCase 1`] = `"hello_world_foo_123_bar"`;
+
+exports[`should convert: hello_world-foo-123-bar -> trainCase 1`] = `"Hello-World-Foo-123-Bar"`;
+
+exports[`should convert: hello_world-foo-123-bar-baz -> camelCase 1`] = `"helloWorldFoo_123BarBaz"`;
+
+exports[`should convert: hello_world-foo-123-bar-baz -> capitalCase 1`] = `"Hello World Foo 123 Bar Baz"`;
+
+exports[`should convert: hello_world-foo-123-bar-baz -> constantCase 1`] = `"HELLO_WORLD_FOO_123_BAR_BAZ"`;
+
+exports[`should convert: hello_world-foo-123-bar-baz -> dotCase 1`] = `"hello.world.foo.123.bar.baz"`;
+
+exports[`should convert: hello_world-foo-123-bar-baz -> kebabCase 1`] = `"hello-world-foo-123-bar-baz"`;
+
+exports[`should convert: hello_world-foo-123-bar-baz -> pascalCase 1`] = `"HelloWorldFoo_123BarBaz"`;
+
+exports[`should convert: hello_world-foo-123-bar-baz -> pascalSnakeCase 1`] = `"Hello_World_Foo_123_Bar_Baz"`;
+
+exports[`should convert: hello_world-foo-123-bar-baz -> pathCase 1`] = `"hello/world/foo/123/bar/baz"`;
+
+exports[`should convert: hello_world-foo-123-bar-baz -> sentenceCase 1`] = `"Hello world foo 123 bar baz"`;
+
+exports[`should convert: hello_world-foo-123-bar-baz -> snakeCase 1`] = `"hello_world_foo_123_bar_baz"`;
+
+exports[`should convert: hello_world-foo-123-bar-baz -> trainCase 1`] = `"Hello-World-Foo-123-Bar-Baz"`;
+
+exports[`should convert: hello-world -> camelCase 1`] = `"helloWorld"`;
+
+exports[`should convert: hello-world -> capitalCase 1`] = `"Hello World"`;
+
+exports[`should convert: hello-world -> constantCase 1`] = `"HELLO_WORLD"`;
+
+exports[`should convert: hello-world -> dotCase 1`] = `"hello.world"`;
+
+exports[`should convert: hello-world -> kebabCase 1`] = `"hello-world"`;
+
+exports[`should convert: hello-world -> pascalCase 1`] = `"HelloWorld"`;
+
+exports[`should convert: hello-world -> pascalSnakeCase 1`] = `"Hello_World"`;
+
+exports[`should convert: hello-world -> pathCase 1`] = `"hello/world"`;
+
+exports[`should convert: hello-world -> sentenceCase 1`] = `"Hello world"`;
+
+exports[`should convert: hello-world -> snakeCase 1`] = `"hello_world"`;
+
+exports[`should convert: hello-world -> trainCase 1`] = `"Hello-World"`;
+
+exports[`should convert: hello-world-foo -> camelCase 1`] = `"helloWorldFoo"`;
+
+exports[`should convert: hello-world-foo -> capitalCase 1`] = `"Hello World Foo"`;
+
+exports[`should convert: hello-world-foo -> constantCase 1`] = `"HELLO_WORLD_FOO"`;
+
+exports[`should convert: hello-world-foo -> dotCase 1`] = `"hello.world.foo"`;
+
+exports[`should convert: hello-world-foo -> kebabCase 1`] = `"hello-world-foo"`;
+
+exports[`should convert: hello-world-foo -> pascalCase 1`] = `"HelloWorldFoo"`;
+
+exports[`should convert: hello-world-foo -> pascalSnakeCase 1`] = `"Hello_World_Foo"`;
+
+exports[`should convert: hello-world-foo -> pathCase 1`] = `"hello/world/foo"`;
+
+exports[`should convert: hello-world-foo -> sentenceCase 1`] = `"Hello world foo"`;
+
+exports[`should convert: hello-world-foo -> snakeCase 1`] = `"hello_world_foo"`;
+
+exports[`should convert: hello-world-foo -> trainCase 1`] = `"Hello-World-Foo"`;
+
+exports[`should convert: hello-world-foo-123 -> camelCase 1`] = `"helloWorldFoo_123"`;
+
+exports[`should convert: hello-world-foo-123 -> capitalCase 1`] = `"Hello World Foo 123"`;
+
+exports[`should convert: hello-world-foo-123 -> constantCase 1`] = `"HELLO_WORLD_FOO_123"`;
+
+exports[`should convert: hello-world-foo-123 -> dotCase 1`] = `"hello.world.foo.123"`;
+
+exports[`should convert: hello-world-foo-123 -> kebabCase 1`] = `"hello-world-foo-123"`;
+
+exports[`should convert: hello-world-foo-123 -> pascalCase 1`] = `"HelloWorldFoo_123"`;
+
+exports[`should convert: hello-world-foo-123 -> pascalSnakeCase 1`] = `"Hello_World_Foo_123"`;
+
+exports[`should convert: hello-world-foo-123 -> pathCase 1`] = `"hello/world/foo/123"`;
+
+exports[`should convert: hello-world-foo-123 -> sentenceCase 1`] = `"Hello world foo 123"`;
+
+exports[`should convert: hello-world-foo-123 -> snakeCase 1`] = `"hello_world_foo_123"`;
+
+exports[`should convert: hello-world-foo-123 -> trainCase 1`] = `"Hello-World-Foo-123"`;
+
+exports[`should convert: helloWorld -> camelCase 1`] = `"helloWorld"`;
+
+exports[`should convert: helloWorld -> capitalCase 1`] = `"Hello World"`;
+
+exports[`should convert: helloWorld -> constantCase 1`] = `"HELLO_WORLD"`;
+
+exports[`should convert: helloWorld -> dotCase 1`] = `"hello.world"`;
+
+exports[`should convert: helloWorld -> kebabCase 1`] = `"hello-world"`;
+
+exports[`should convert: helloWorld -> pascalCase 1`] = `"HelloWorld"`;
+
+exports[`should convert: helloWorld -> pascalSnakeCase 1`] = `"Hello_World"`;
+
+exports[`should convert: helloWorld -> pathCase 1`] = `"hello/world"`;
+
+exports[`should convert: helloWorld -> sentenceCase 1`] = `"Hello world"`;
+
+exports[`should convert: helloWorld -> snakeCase 1`] = `"hello_world"`;
+
+exports[`should convert: helloWorld -> trainCase 1`] = `"Hello-World"`;
+
+exports[`should convert: helloWorldFoo -> camelCase 1`] = `"helloWorldFoo"`;
+
+exports[`should convert: helloWorldFoo -> capitalCase 1`] = `"Hello World Foo"`;
+
+exports[`should convert: helloWorldFoo -> constantCase 1`] = `"HELLO_WORLD_FOO"`;
+
+exports[`should convert: helloWorldFoo -> dotCase 1`] = `"hello.world.foo"`;
+
+exports[`should convert: helloWorldFoo -> kebabCase 1`] = `"hello-world-foo"`;
+
+exports[`should convert: helloWorldFoo -> pascalCase 1`] = `"HelloWorldFoo"`;
+
+exports[`should convert: helloWorldFoo -> pascalSnakeCase 1`] = `"Hello_World_Foo"`;
+
+exports[`should convert: helloWorldFoo -> pathCase 1`] = `"hello/world/foo"`;
+
+exports[`should convert: helloWorldFoo -> sentenceCase 1`] = `"Hello world foo"`;
+
+exports[`should convert: helloWorldFoo -> snakeCase 1`] = `"hello_world_foo"`;
+
+exports[`should convert: helloWorldFoo -> trainCase 1`] = `"Hello-World-Foo"`;
+
+exports[`should convert: helloWorldFoo123 -> camelCase 1`] = `"helloWorldFoo123"`;
+
+exports[`should convert: helloWorldFoo123 -> capitalCase 1`] = `"Hello World Foo123"`;
+
+exports[`should convert: helloWorldFoo123 -> constantCase 1`] = `"HELLO_WORLD_FOO123"`;
+
+exports[`should convert: helloWorldFoo123 -> dotCase 1`] = `"hello.world.foo123"`;
+
+exports[`should convert: helloWorldFoo123 -> kebabCase 1`] = `"hello-world-foo123"`;
+
+exports[`should convert: helloWorldFoo123 -> pascalCase 1`] = `"HelloWorldFoo123"`;
+
+exports[`should convert: helloWorldFoo123 -> pascalSnakeCase 1`] = `"Hello_World_Foo123"`;
+
+exports[`should convert: helloWorldFoo123 -> pathCase 1`] = `"hello/world/foo123"`;
+
+exports[`should convert: helloWorldFoo123 -> sentenceCase 1`] = `"Hello world foo123"`;
+
+exports[`should convert: helloWorldFoo123 -> snakeCase 1`] = `"hello_world_foo123"`;
+
+exports[`should convert: helloWorldFoo123 -> trainCase 1`] = `"Hello-World-Foo123"`;
+
+exports[`should convert: helloWorldFoo123Bar -> camelCase 1`] = `"helloWorldFoo123Bar"`;
+
+exports[`should convert: helloWorldFoo123Bar -> capitalCase 1`] = `"Hello World Foo123 Bar"`;
+
+exports[`should convert: helloWorldFoo123Bar -> constantCase 1`] = `"HELLO_WORLD_FOO123_BAR"`;
+
+exports[`should convert: helloWorldFoo123Bar -> dotCase 1`] = `"hello.world.foo123.bar"`;
+
+exports[`should convert: helloWorldFoo123Bar -> kebabCase 1`] = `"hello-world-foo123-bar"`;
+
+exports[`should convert: helloWorldFoo123Bar -> pascalCase 1`] = `"HelloWorldFoo123Bar"`;
+
+exports[`should convert: helloWorldFoo123Bar -> pascalSnakeCase 1`] = `"Hello_World_Foo123_Bar"`;
+
+exports[`should convert: helloWorldFoo123Bar -> pathCase 1`] = `"hello/world/foo123/bar"`;
+
+exports[`should convert: helloWorldFoo123Bar -> sentenceCase 1`] = `"Hello world foo123 bar"`;
+
+exports[`should convert: helloWorldFoo123Bar -> snakeCase 1`] = `"hello_world_foo123_bar"`;
+
+exports[`should convert: helloWorldFoo123Bar -> trainCase 1`] = `"Hello-World-Foo123-Bar"`;
+
+exports[`should convert: helloWorldFoo123BarBaz -> camelCase 1`] = `"helloWorldFoo123BarBaz"`;
+
+exports[`should convert: helloWorldFoo123BarBaz -> capitalCase 1`] = `"Hello World Foo123 Bar Baz"`;
+
+exports[`should convert: helloWorldFoo123BarBaz -> constantCase 1`] = `"HELLO_WORLD_FOO123_BAR_BAZ"`;
+
+exports[`should convert: helloWorldFoo123BarBaz -> dotCase 1`] = `"hello.world.foo123.bar.baz"`;
+
+exports[`should convert: helloWorldFoo123BarBaz -> kebabCase 1`] = `"hello-world-foo123-bar-baz"`;
+
+exports[`should convert: helloWorldFoo123BarBaz -> pascalCase 1`] = `"HelloWorldFoo123BarBaz"`;
+
+exports[`should convert: helloWorldFoo123BarBaz -> pascalSnakeCase 1`] = `"Hello_World_Foo123_Bar_Baz"`;
+
+exports[`should convert: helloWorldFoo123BarBaz -> pathCase 1`] = `"hello/world/foo123/bar/baz"`;
+
+exports[`should convert: helloWorldFoo123BarBaz -> sentenceCase 1`] = `"Hello world foo123 bar baz"`;
+
+exports[`should convert: helloWorldFoo123BarBaz -> snakeCase 1`] = `"hello_world_foo123_bar_baz"`;
+
+exports[`should convert: helloWorldFoo123BarBaz -> trainCase 1`] = `"Hello-World-Foo123-Bar-Baz"`;
