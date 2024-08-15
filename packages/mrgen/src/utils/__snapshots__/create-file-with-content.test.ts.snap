@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should create a file with the given content: aggregateLogProxySpy 1`] = `
+[
+  {
+    "debug": [
+      "mkdirSync",
+      ".",
+    ],
+  },
+  {
+    "debug": [
+      "writeFileSync",
+      "test-file-path.txt",
+    ],
+  },
+]
+`;
+
+exports[`should create a file with the given content: fs.mkdirSync 1`] = `
+[
+  [
+    ".",
+    {
+      "recursive": true,
+    },
+  ],
+]
+`;
+
+exports[`should create a file with the given content: fs.writeFileSync 1`] = `
+[
+  [
+    "test-file-path.txt",
+    "
+  test content
+  1
+  2
+  3
+  ",
+    "utf-8",
+  ],
+]
+`;
