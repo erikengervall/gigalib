@@ -10,6 +10,7 @@ export * from './get-filename-from-error-stack';
 export * from './get-random-number';
 export * from './http-error-status-codes';
 export * from './lowercase';
+export * from './mock-node-packages';
 export * from './reason-phrase-for-status-code-map';
 export * from './register-log-spies';
 export * from './reorderer';

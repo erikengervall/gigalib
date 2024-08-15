@@ -1,12 +1,3 @@
-jest.mock('node:child_process', () => {
-  return {
-    execSync: jest.fn(),
-  };
-});
+import { mockNodePackages } from '@engervall/shared';
 
-jest.mock('node:fs', () => {
-  return {
-    mkdirSync: jest.fn(),
-    writeFileSync: jest.fn(),
-  };
-});
+mockNodePackages();

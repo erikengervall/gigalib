@@ -23,7 +23,7 @@ exports[`should create a frontend file for a GET request: aggregateLogProxySpy 1
 ]
 `;
 
-exports[`should create a frontend file for a GET request: cp.execSync 1`] = `
+exports[`should create a frontend file for a GET request: execSync 1`] = `
 [
   [
     "yarn prettier --write packages/frontend1/src/api/hooks/v1-user-get.ts",
@@ -31,7 +31,9 @@ exports[`should create a frontend file for a GET request: cp.execSync 1`] = `
 ]
 `;
 
-exports[`should create a frontend file for a GET request: fs.mkdirSync 1`] = `
+exports[`should create a frontend file for a GET request: lstatSync 1`] = `[]`;
+
+exports[`should create a frontend file for a GET request: mkdirSync 1`] = `
 [
   [
     "packages/frontend1/src/api/hooks",
@@ -42,7 +44,9 @@ exports[`should create a frontend file for a GET request: fs.mkdirSync 1`] = `
 ]
 `;
 
-exports[`should create a frontend file for a GET request: fs.writeFileSync 1`] = `
+exports[`should create a frontend file for a GET request: readdirSync 1`] = `[]`;
+
+exports[`should create a frontend file for a GET request: writeFileSync 1`] = `
 [
   [
     "packages/frontend1/src/api/hooks/v1-user-get.ts",
@@ -96,7 +100,7 @@ exports[`should create a frontend file for a POST request: aggregateLogProxySpy 
 ]
 `;
 
-exports[`should create a frontend file for a POST request: cp.execSync 1`] = `
+exports[`should create a frontend file for a POST request: execSync 1`] = `
 [
   [
     "yarn prettier --write packages/frontend1/src/api/hooks/v1-user-get.ts",
@@ -104,7 +108,9 @@ exports[`should create a frontend file for a POST request: cp.execSync 1`] = `
 ]
 `;
 
-exports[`should create a frontend file for a POST request: fs.mkdirSync 1`] = `
+exports[`should create a frontend file for a POST request: lstatSync 1`] = `[]`;
+
+exports[`should create a frontend file for a POST request: mkdirSync 1`] = `
 [
   [
     "packages/frontend1/src/api/hooks",
@@ -115,7 +121,9 @@ exports[`should create a frontend file for a POST request: fs.mkdirSync 1`] = `
 ]
 `;
 
-exports[`should create a frontend file for a POST request: fs.writeFileSync 1`] = `
+exports[`should create a frontend file for a POST request: readdirSync 1`] = `[]`;
+
+exports[`should create a frontend file for a POST request: writeFileSync 1`] = `
 [
   [
     "packages/frontend1/src/api/hooks/v1-user-get.ts",

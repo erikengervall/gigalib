@@ -1,6 +1,5 @@
-import { logSnapshots } from '@engervall/shared';
+import { fsSnapshots, logSnapshots } from '@engervall/shared';
 
-import { mockMkdirSync, mockWriteFileSync } from '../test-goodies/mocks';
 import { createFileWithContent } from './create-file-with-content';
 
 it('should create a file with the given content', () => {
@@ -17,7 +16,6 @@ it('should create a file with the given content', () => {
   createFileWithContent(filePath, content);
 
   // Assert
-  expect(mockMkdirSync.mock.calls).toMatchSnapshot('fs.mkdirSync');
-  expect(mockWriteFileSync.mock.calls).toMatchSnapshot('fs.writeFileSync');
+  fsSnapshots();
   logSnapshots();
 });

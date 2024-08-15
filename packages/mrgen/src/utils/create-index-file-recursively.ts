@@ -3,7 +3,7 @@ import path from 'node:path';
 
 import { getAPIBit } from './get-api-bit';
 
-// recursively create all index.ts files in shared/src/api
+// recursively create all index.ts files in dir
 export function createIndexFileRecurse({
   dir,
   withAlias,

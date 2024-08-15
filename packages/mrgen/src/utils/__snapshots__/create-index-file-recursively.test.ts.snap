@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should create index files recursively: lstatSync 1`] = `
+[
+  [
+    "/Users/noaa/dev/gigalib/packages/mrgen/src/utils/module-1.ts",
+  ],
+  [
+    "/Users/noaa/dev/gigalib/packages/mrgen/src/utils/module-2.ts",
+  ],
+  [
+    "/Users/noaa/dev/gigalib/packages/mrgen/src/utils/module-3.ts",
+  ],
+]
+`;
+
+exports[`should create index files recursively: mkdirSync 1`] = `[]`;
+
+exports[`should create index files recursively: readdirSync 1`] = `
+[
+  [
+    "/Users/noaa/dev/gigalib/packages/mrgen/src/utils",
+  ],
+]
+`;
+
+exports[`should create index files recursively: writeFileSync 1`] = `
+[
+  [
+    "/Users/noaa/dev/gigalib/packages/mrgen/src/utils/index.ts",
+    "export *  as Module_1  from './module-1';
+export *  as Module_2  from './module-2';
+export *  as Module_3  from './module-3';",
+    "utf-8",
+  ],
+]
+`;
