@@ -10,3 +10,5 @@ well as library choices.
 2. Your monorepo uses Zod for type-safety.
 3. Your monorepo uses Express for the backend.
 4. Your monorepo uses React Query for the frontend.
+
+<!--  -->
