@@ -86,14 +86,14 @@ export function createFrontendFile(options: MRGenOptions) {
     export const ${queryVarName} = (
       input: ${queryInput},
       options?: UseQueryOptions<
-        API.V1.User.Get.ResponseBody,
+        ${responseBody},
         FrontendResponseError
       >,
     ) => {
       return useQuery({
         queryFn: async () => {
           ${options.data.queryParams ? 'const queryParams = QueryString.stringify(input.queryParams);' : ''}
-          const response = await apiClient.get<API.V1.User.Get.ResponseBody>(
+          const response = await apiClient.get<${responseBody}>(
             \`${APIType.urlPath}${options.data.queryParams ? '?${queryParams}' : ''}\`,
             ${options.data.params ? '{ params: input.params }' : ''}
           );
