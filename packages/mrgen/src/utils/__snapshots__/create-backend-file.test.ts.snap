@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should create and format backend files: aggregateLogProxySpy 1`] = `
+[
+  {
+    "debug": [
+      "mkdirSync",
+      "packages/backend/src/handlers/v1/user",
+    ],
+  },
+  {
+    "debug": [
+      "writeFileSync",
+      "packages/backend/src/handlers/v1/user/get-handler.ts",
+    ],
+  },
+  {
+    "debug": [
+      "Running command",
+      "yarn prettier --write packages/backend/src/handlers/v1/user/get-handler.ts",
+    ],
+  },
+]
+`;
+
+exports[`should create and format backend files: cp.execSync 1`] = `
+[
+  [
+    "yarn prettier --write packages/backend/src/handlers/v1/user/get-handler.ts",
+  ],
+]
+`;
+
+exports[`should create and format backend files: fs.mkdirSync 1`] = `
+[
+  [
+    "packages/backend/src/handlers/v1/user",
+    {
+      "recursive": true,
+    },
+  ],
+]
+`;
+
+exports[`should create and format backend files: fs.writeFileSync 1`] = `
+[
+  [
+    "packages/backend/src/handlers/v1/user/get-handler.ts",
+    "
+  import { API } from 'shared';
+  import type { RequestHandler } from 'express';
+  
+  export const getHandler: RequestHandler = async (req, res) => {
+    
+const parsedPayload = API.V1.User.Get.Payload.safeParse(req.body);
+if (!parsedPayload.success) {
+  res.status(400).json(); // TODO: Include error details.
+  return;
+}
+
+    
+  const parsedQueryParams = API.V1.User.Get.QueryParams.safeParse(req.query);
+  if (!parsedQueryParams.success) {
+    res.status(400).json(); // TODO: Include error details.
+    return;
+  }
+
+    
+  const parsedParams = API.V1.User.Get.Params.safeParse(req.params);
+  if (!parsedParams.success) {
+    res.status(400).json(); // TODO: Include error details.
+    return;
+  }
+  
+    
+const responseBody: API.V1.User.Get.ResponseBody = {
+  data: {},
+};
+return res.status(200).json(responseBody);
+    
+  }
+  ",
+    "utf-8",
+  ],
+]
+`;

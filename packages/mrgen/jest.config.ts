@@ -1,6 +1,6 @@
-import type { Config } from 'jest'
+import type { Config } from 'jest';
 
-import rootJestConfig from '../../jest.config'
+import rootJestConfig from '../../jest.config';
 
 const config: Config = {
   ...rootJestConfig,
@@ -12,6 +12,6 @@ const config: Config = {
     ...(rootJestConfig.setupFilesAfterEnv ?? []),
     // add more here
   ],
-}
+};
 
-export default config
+export default config;
