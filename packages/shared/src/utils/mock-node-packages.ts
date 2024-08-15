@@ -6,7 +6,7 @@ export const mockFs = {
   mkdirSync: jest.fn(),
   writeFileSync: jest.fn(),
   readdirSync: jest.fn(() => {
-    return ['index.ts', 'module-1.ts', 'module-2.ts', 'module-3.ts'];
+    return ['index.ts', 'module-one.ts', 'module-two.ts', 'module-three.ts'];
   }),
   lstatSync: jest.fn(() => {
     return {

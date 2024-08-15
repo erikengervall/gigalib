@@ -3,13 +3,13 @@
 exports[`should create index files recursively: lstatSync 1`] = `
 [
   [
-    "/Users/noaa/dev/gigalib/packages/mrgen/src/utils/module-1.ts",
+    "/Users/noaa/dev/gigalib/packages/mrgen/src/utils/module-one.ts",
   ],
   [
-    "/Users/noaa/dev/gigalib/packages/mrgen/src/utils/module-2.ts",
+    "/Users/noaa/dev/gigalib/packages/mrgen/src/utils/module-two.ts",
   ],
   [
-    "/Users/noaa/dev/gigalib/packages/mrgen/src/utils/module-3.ts",
+    "/Users/noaa/dev/gigalib/packages/mrgen/src/utils/module-three.ts",
   ],
 ]
 `;
@@ -28,9 +28,9 @@ exports[`should create index files recursively: writeFileSync 1`] = `
 [
   [
     "/Users/noaa/dev/gigalib/packages/mrgen/src/utils/index.ts",
-    "export *  as Module_1  from './module-1';
-export *  as Module_2  from './module-2';
-export *  as Module_3  from './module-3';",
+    "export *  as ModuleOne  from './module-one';
+export *  as ModuleTwo  from './module-two';
+export *  as ModuleThree  from './module-three';",
     "utf-8",
   ],
 ]
