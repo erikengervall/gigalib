@@ -25,7 +25,13 @@ export function createSharedFile(options: MRGenOptions) {
   ${options.data.queryParams ? `export const ${SHARED_EXPORTS.QueryParams} = z.object({});` : ''}
   ${options.data.queryParams ? `export type ${SHARED_EXPORTS.QueryParams} = z.infer<typeof ${SHARED_EXPORTS.QueryParams}>;` : ''}
   
-  ${options.data.responseBody ? `export type ${SHARED_EXPORTS.ResponseBody} = { data: unknown; };` : ''}
+  ${
+    options.data.responseBody
+      ? `export type ${SHARED_EXPORTS.ResponseBody} = { 
+          data: unknown; 
+        };`
+      : ''
+  }
   `;
 
   createFileWithContent(options.shared.file, SHARED_FILE_CONTENT);
