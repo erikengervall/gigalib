@@ -1,0 +1,154 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should create a frontend file for a GET request: aggregateLogProxySpy 1`] = `
+[
+  {
+    "debug": [
+      "mkdirSync",
+      "packages/frontend1/src/api/hooks",
+    ],
+  },
+  {
+    "debug": [
+      "writeFileSync",
+      "packages/frontend1/src/api/hooks/v1-user-get.ts",
+    ],
+  },
+  {
+    "debug": [
+      "Running command",
+      "yarn prettier --write packages/frontend1/src/api/hooks/v1-user-get.ts",
+    ],
+  },
+]
+`;
+
+exports[`should create a frontend file for a GET request: cp.execSync 1`] = `
+[
+  [
+    "yarn prettier --write packages/frontend1/src/api/hooks/v1-user-get.ts",
+  ],
+]
+`;
+
+exports[`should create a frontend file for a GET request: fs.mkdirSync 1`] = `
+[
+  [
+    "packages/frontend1/src/api/hooks",
+    {
+      "recursive": true,
+    },
+  ],
+]
+`;
+
+exports[`should create a frontend file for a GET request: fs.writeFileSync 1`] = `
+[
+  [
+    "packages/frontend1/src/api/hooks/v1-user-get.ts",
+    "
+    export const useApiV1UserGetQuery = (
+      input: {              params: API.V1.User.Get.Params;              queryParams: API.V1.User.Get.QueryParams;            },
+      options?: UseQueryOptions<
+        API.V1.User.Get.ResponseBody,
+        FrontendResponseError
+      >,
+    ) => {
+      return useQuery({
+        queryFn: async () => {
+          const queryParams = QueryString.stringify(input.queryParams);
+          const response = await apiClient.get<API.V1.User.Get.ResponseBody>(
+            \`api/v1/user/get?\${queryParams}\`,
+            { params: input.params }
+          );
+          return response.data;
+        },
+        queryKey: ['useApiV1UserGetQuery'],
+        ...options,
+      });
+    };
+",
+    "utf-8",
+  ],
+]
+`;
+
+exports[`should create a frontend file for a POST request: aggregateLogProxySpy 1`] = `
+[
+  {
+    "debug": [
+      "mkdirSync",
+      "packages/frontend1/src/api/hooks",
+    ],
+  },
+  {
+    "debug": [
+      "writeFileSync",
+      "packages/frontend1/src/api/hooks/v1-user-get.ts",
+    ],
+  },
+  {
+    "debug": [
+      "Running command",
+      "yarn prettier --write packages/frontend1/src/api/hooks/v1-user-get.ts",
+    ],
+  },
+]
+`;
+
+exports[`should create a frontend file for a POST request: cp.execSync 1`] = `
+[
+  [
+    "yarn prettier --write packages/frontend1/src/api/hooks/v1-user-get.ts",
+  ],
+]
+`;
+
+exports[`should create a frontend file for a POST request: fs.mkdirSync 1`] = `
+[
+  [
+    "packages/frontend1/src/api/hooks",
+    {
+      "recursive": true,
+    },
+  ],
+]
+`;
+
+exports[`should create a frontend file for a POST request: fs.writeFileSync 1`] = `
+[
+  [
+    "packages/frontend1/src/api/hooks/v1-user-get.ts",
+    "
+    import { apiClient } from '../api-client';
+    import type { FrontendResponseError } from '../frontend-response-error';
+    import { UseMutationOptions, useMutation } from '@tanstack/react-query';
+    import { API } from 'shared';
+    import QueryString from 'qs';
+    
+    export const useApiV1UserGetMutation = (
+      options?: UseMutationOptions<
+        API.V1.User.Get.ResponseBody,
+        FrontendResponseError,
+        {              payload: API.V1.User.Get.Payload;              params: API.V1.User.Get.Params;              queryParams: API.V1.User.Get.QueryParams;            }
+      >,
+    ) => {
+      return useMutation({
+        mutationFn: async (input) => {
+          const queryParams = QueryString.stringify(input.queryParams);
+          const response = await apiClient.post<API.V1.User.Get.ResponseBody>(
+            \`api/v1/user/get?\${queryParams}\`,
+            input.payload,
+            { params: input.params }
+          );
+          return response.data;
+        },
+        mutationKey: ['useApiV1UserGetMutation'],
+        ...options,
+      });
+    };
+    ",
+    "utf-8",
+  ],
+]
+`;
