@@ -21,8 +21,11 @@ export function createBackendFile(options: MRGenOptions) {
     ? `
 const parsed${SHARED_EXPORTS.Payload} = ${APIType.payload}.safeParse(req.body);
 if (!parsed${SHARED_EXPORTS.Payload}.success) {
-  res.status(400).json(); // TODO: Include error details.
-  return;
+    throw new ServiceError({
+      externalErrorCode: 'invalid_payload',
+      internalErrorMessage: 'Invalid request payload.',
+      externalHttpStatusCode: 400,
+    });
 }`
     : '';
 
@@ -30,8 +33,11 @@ if (!parsed${SHARED_EXPORTS.Payload}.success) {
     ? `
   const parsed${SHARED_EXPORTS.QueryParams} = ${APIType.queryParams}.safeParse(req.query);
   if (!parsed${SHARED_EXPORTS.QueryParams}.success) {
-    res.status(400).json(); // TODO: Include error details.
-    return;
+      throw new ServiceError({
+      externalErrorCode: 'invalid_query_params',
+      internalErrorMessage: 'Invalid request query params.',
+      externalHttpStatusCode: 400,
+    });
   }`
     : '';
 
@@ -39,8 +45,11 @@ if (!parsed${SHARED_EXPORTS.Payload}.success) {
     ? `
   const parsed${SHARED_EXPORTS.Params} = ${APIType.params}.safeParse(req.params);
   if (!parsed${SHARED_EXPORTS.Params}.success) {
-    res.status(400).json(); // TODO: Include error details.
-    return;
+      throw new ServiceError({
+      externalErrorCode: 'invalid_params',
+      internalErrorMessage: 'Invalid request params.',
+      externalHttpStatusCode: 400,
+    });
   }`
     : '';
 
@@ -54,7 +63,7 @@ return res.status(200).json(responseBody);
     : 'return res.status(200).send();';
 
   const backendFileContent = `
-  import { API } from 'shared';
+  import { API, ServiceError } from 'shared';
   import type { RequestHandler } from 'express';
   
   export const ${handlerName}: RequestHandler = async (req, res) => {
