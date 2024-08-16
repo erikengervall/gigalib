@@ -33,7 +33,7 @@ if (!parsed${SHARED_EXPORTS.Payload}.success) {
     ? `
   const parsed${SHARED_EXPORTS.QueryParams} = ${APIType.queryParams}.safeParse(req.query);
   if (!parsed${SHARED_EXPORTS.QueryParams}.success) {
-      throw new ServiceError({
+    throw new ServiceError({
       externalErrorCode: 'invalid_query_params',
       internalErrorMessage: 'Invalid request query params.',
       externalHttpStatusCode: 400,
@@ -45,7 +45,7 @@ if (!parsed${SHARED_EXPORTS.Payload}.success) {
     ? `
   const parsed${SHARED_EXPORTS.Params} = ${APIType.params}.safeParse(req.params);
   if (!parsed${SHARED_EXPORTS.Params}.success) {
-      throw new ServiceError({
+    throw new ServiceError({
       externalErrorCode: 'invalid_params',
       internalErrorMessage: 'Invalid request params.',
       externalHttpStatusCode: 400,
