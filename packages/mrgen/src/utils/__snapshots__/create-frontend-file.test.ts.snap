@@ -51,6 +51,12 @@ exports[`should create a frontend file for a GET request: writeFileSync 1`] = `
   [
     "packages/frontend1/src/api/hooks/v1-user-get.ts",
     "
+    import { apiClient } from '../api-client';
+    import type { FrontendResponseError } from '../frontend-response-error';
+    import { UseQueryOptions, useQuery } from '@tanstack/react-query';
+    import { API } from 'shared';
+    import QueryString from 'qs';
+
     export const useApiV1UserGetQuery = (
       input: {              params: API.V1.User.Get.Params;              queryParams: API.V1.User.Get.QueryParams;            },
       options?: UseQueryOptions<

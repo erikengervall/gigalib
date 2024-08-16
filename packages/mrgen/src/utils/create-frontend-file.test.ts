@@ -1,8 +1,8 @@
 import {
   cpSnapshots,
   fsSnapshots,
+  getMockFs,
   logSnapshots,
-  mockFs,
 } from '@engervall/shared';
 
 import { createMockMRGenOptions } from '../test-goodies/fixtures';
@@ -16,7 +16,9 @@ it('should create a frontend file for a GET request', () => {
   createFrontendFile(mrGenOptions);
 
   fsSnapshots();
-  expect(JSON.stringify(mockFs.writeFileSync.mock.calls)).toContain('useQuery');
+  expect(JSON.stringify(getMockFs().writeFileSync.mock.calls)).toContain(
+    'useQuery',
+  );
   cpSnapshots();
   logSnapshots();
 });
@@ -29,7 +31,7 @@ it('should create a frontend file for a POST request', () => {
   createFrontendFile(mrGenOptions);
 
   fsSnapshots();
-  expect(JSON.stringify(mockFs.writeFileSync.mock.calls)).toContain(
+  expect(JSON.stringify(getMockFs().writeFileSync.mock.calls)).toContain(
     'useMutation',
   );
   cpSnapshots();

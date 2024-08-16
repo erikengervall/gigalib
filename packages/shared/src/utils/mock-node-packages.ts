@@ -1,49 +1,60 @@
-/* eslint-disable @typescript-eslint/ban-ts-comment */
+let mockCpCache: {
+  [key: string]: jest.Mock;
+};
+export const getMockCp = () => {
+  if (mockCpCache) {
+    return mockCpCache;
+  }
 
-export const mockCp = {
-  // @ts-ignore
-  execSync: jest.fn(),
+  mockCpCache = {
+    execSync: jest.fn(),
+  };
+
+  return mockCpCache;
 };
 
-export const mockFs = {
-  // @ts-ignore
-  mkdirSync: jest.fn(),
-  // @ts-ignore
-  writeFileSync: jest.fn(),
-  // @ts-ignore
-  readdirSync: jest.fn(() => {
-    return ['index.ts', 'module-one.ts', 'module-two.ts', 'module-three.ts'];
-  }),
-  // @ts-ignore
-  lstatSync: jest.fn(() => {
-    return {
-      isDirectory: () => false,
-    };
-  }),
+let mockFsCache: {
+  [key: string]: jest.Mock;
+};
+export const getMockFs = () => {
+  if (mockFsCache) {
+    return mockFsCache;
+  }
+
+  mockFsCache = {
+    mkdirSync: jest.fn(),
+    writeFileSync: jest.fn(),
+    readdirSync: jest.fn(() => {
+      return ['index.ts', 'module-one.ts', 'module-two.ts', 'module-three.ts'];
+    }),
+    lstatSync: jest.fn(() => {
+      return {
+        isDirectory: () => false,
+      };
+    }),
+  };
+
+  return mockFsCache;
 };
 
 export function mockNodePackages() {
-  // @ts-ignore
   jest.mock('node:child_process', () => {
-    return mockCp;
+    return getMockCp();
   });
 
-  // @ts-ignore
   jest.mock('node:fs', () => {
-    return mockFs;
+    return getMockFs();
   });
 }
 
 export function fsSnapshots() {
-  for (const [fsMethod, mockFn] of Object.entries(mockFs)) {
-    // @ts-ignore
+  for (const [fsMethod, mockFn] of Object.entries(getMockFs())) {
     expect(mockFn.mock.calls).toMatchSnapshot(fsMethod);
   }
 }
 
 export function cpSnapshots() {
-  for (const [cpMethod, mockFn] of Object.entries(mockCp)) {
-    // @ts-ignore
+  for (const [cpMethod, mockFn] of Object.entries(getMockCp())) {
     expect(mockFn.mock.calls).toMatchSnapshot(cpMethod);
   }
 }
