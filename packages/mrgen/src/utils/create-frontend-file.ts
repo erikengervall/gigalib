@@ -32,8 +32,8 @@ export function createFrontendFile(options: MRGenOptions) {
         .join('');
 
       frontendFileContent = `
-    import { apiClient } from '../api-client';
-    import type { FrontendResponseError } from '../frontend-response-error';
+    import { apiClient } from './api-client';
+    import type { FrontendResponseError } from '@engervall/shared';
     import { UseMutationOptions, useMutation } from '@tanstack/react-query';
     import { API } from 'shared';
     ${options.data.queryParams ? "import QueryString from 'qs';" : ''}
@@ -77,8 +77,8 @@ export function createFrontendFile(options: MRGenOptions) {
         .join('');
 
       frontendFileContent = `
-    import { apiClient } from '../api-client';
-    import type { FrontendResponseError } from '../frontend-response-error';
+    import { apiClient } from './api-client';
+    import type { FrontendResponseError } from '@engervall/shared';
     import { UseQueryOptions, useQuery } from '@tanstack/react-query';
     import { API } from 'shared';
     ${options.data.queryParams ? "import QueryString from 'qs';" : ''}
