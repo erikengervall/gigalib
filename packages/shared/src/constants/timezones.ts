@@ -7,7 +7,7 @@ export const TIMEZONES = {
     abbr: 'DST',
     offset: -12,
     isdst: false,
-    text: '(UTC-12:00) International Date Line West',
+    handle: '(UTC-12:00) International Date Line West', // originally called "text"
     utc: ['Etc/GMT+12'],
   },
   '(UTC-11:00) Coordinated Universal Time-11': {
@@ -15,7 +15,7 @@ export const TIMEZONES = {
     abbr: 'U',
     offset: -11,
     isdst: false,
-    text: '(UTC-11:00) Coordinated Universal Time-11',
+    handle: '(UTC-11:00) Coordinated Universal Time-11', // originally called "text"
     utc: ['Etc/GMT+11', 'Pacific/Midway', 'Pacific/Niue', 'Pacific/Pago_Pago'],
   },
   '(UTC-10:00) Hawaii': {
@@ -23,7 +23,7 @@ export const TIMEZONES = {
     abbr: 'HST',
     offset: -10,
     isdst: false,
-    text: '(UTC-10:00) Hawaii',
+    handle: '(UTC-10:00) Hawaii', // originally called "text"
     utc: [
       'Etc/GMT+10',
       'Pacific/Honolulu',
@@ -37,7 +37,7 @@ export const TIMEZONES = {
     abbr: 'AKDT',
     offset: -8,
     isdst: true,
-    text: '(UTC-09:00) Alaska',
+    handle: '(UTC-09:00) Alaska', // originally called "text"
     utc: [
       'America/Anchorage',
       'America/Juneau',
@@ -51,7 +51,7 @@ export const TIMEZONES = {
     abbr: 'PDT',
     offset: -7,
     isdst: true,
-    text: '(UTC-08:00) Baja California',
+    handle: '(UTC-08:00) Baja California', // originally called "text"
     utc: ['America/Santa_Isabel'],
   },
   '(UTC-07:00) Pacific Daylight Time (US & Canada)': {
@@ -59,7 +59,7 @@ export const TIMEZONES = {
     abbr: 'PDT',
     offset: -7,
     isdst: true,
-    text: '(UTC-07:00) Pacific Daylight Time (US & Canada)',
+    handle: '(UTC-07:00) Pacific Daylight Time (US & Canada)', // originally called "text"
     utc: ['America/Los_Angeles', 'America/Tijuana', 'America/Vancouver'],
   },
   '(UTC-08:00) Pacific Standard Time (US & Canada)': {
@@ -67,7 +67,7 @@ export const TIMEZONES = {
     abbr: 'PST',
     offset: -8,
     isdst: false,
-    text: '(UTC-08:00) Pacific Standard Time (US & Canada)',
+    handle: '(UTC-08:00) Pacific Standard Time (US & Canada)', // originally called "text"
     utc: [
       'America/Los_Angeles',
       'America/Tijuana',
@@ -80,7 +80,7 @@ export const TIMEZONES = {
     abbr: 'UMST',
     offset: -7,
     isdst: false,
-    text: '(UTC-07:00) Arizona',
+    handle: '(UTC-07:00) Arizona', // originally called "text"
     utc: [
       'America/Creston',
       'America/Dawson',
@@ -96,7 +96,7 @@ export const TIMEZONES = {
     abbr: 'MDT',
     offset: -6,
     isdst: true,
-    text: '(UTC-07:00) Chihuahua, La Paz, Mazatlan',
+    handle: '(UTC-07:00) Chihuahua, La Paz, Mazatlan', // originally called "text"
     utc: ['America/Chihuahua', 'America/Mazatlan'],
   },
   '(UTC-07:00) Mountain Time (US & Canada)': {
@@ -104,7 +104,7 @@ export const TIMEZONES = {
     abbr: 'MDT',
     offset: -6,
     isdst: true,
-    text: '(UTC-07:00) Mountain Time (US & Canada)',
+    handle: '(UTC-07:00) Mountain Time (US & Canada)', // originally called "text"
     utc: [
       'America/Boise',
       'America/Cambridge_Bay',
@@ -121,7 +121,7 @@ export const TIMEZONES = {
     abbr: 'CAST',
     offset: -6,
     isdst: false,
-    text: '(UTC-06:00) Central America',
+    handle: '(UTC-06:00) Central America', // originally called "text"
     utc: [
       'America/Belize',
       'America/Costa_Rica',
@@ -138,7 +138,7 @@ export const TIMEZONES = {
     abbr: 'CDT',
     offset: -5,
     isdst: true,
-    text: '(UTC-06:00) Central Time (US & Canada)',
+    handle: '(UTC-06:00) Central Time (US & Canada)', // originally called "text"
     utc: [
       'America/Chicago',
       'America/Indiana/Knox',
@@ -160,7 +160,7 @@ export const TIMEZONES = {
     abbr: 'CDT',
     offset: -5,
     isdst: true,
-    text: '(UTC-06:00) Guadalajara, Mexico City, Monterrey',
+    handle: '(UTC-06:00) Guadalajara, Mexico City, Monterrey', // originally called "text"
     utc: [
       'America/Bahia_Banderas',
       'America/Cancun',
@@ -174,7 +174,7 @@ export const TIMEZONES = {
     abbr: 'CCST',
     offset: -6,
     isdst: false,
-    text: '(UTC-06:00) Saskatchewan',
+    handle: '(UTC-06:00) Saskatchewan', // originally called "text"
     utc: ['America/Regina', 'America/Swift_Current'],
   },
   '(UTC-05:00) Bogota, Lima, Quito': {
@@ -182,7 +182,7 @@ export const TIMEZONES = {
     abbr: 'SPST',
     offset: -5,
     isdst: false,
-    text: '(UTC-05:00) Bogota, Lima, Quito',
+    handle: '(UTC-05:00) Bogota, Lima, Quito', // originally called "text"
     utc: [
       'America/Bogota',
       'America/Cayman',
@@ -201,7 +201,7 @@ export const TIMEZONES = {
     abbr: 'EST',
     offset: -5,
     isdst: false,
-    text: '(UTC-05:00) Eastern Time (US & Canada)',
+    handle: '(UTC-05:00) Eastern Time (US & Canada)', // originally called "text"
     utc: [
       'America/Detroit',
       'America/Havana',
@@ -226,7 +226,7 @@ export const TIMEZONES = {
     abbr: 'EDT',
     offset: -4,
     isdst: true,
-    text: '(UTC-04:00) Eastern Daylight Time (US & Canada)',
+    handle: '(UTC-04:00) Eastern Daylight Time (US & Canada)', // originally called "text"
     utc: [
       'America/Detroit',
       'America/Havana',
@@ -251,7 +251,7 @@ export const TIMEZONES = {
     abbr: 'UEDT',
     offset: -5,
     isdst: false,
-    text: '(UTC-05:00) Indiana (East)',
+    handle: '(UTC-05:00) Indiana (East)', // originally called "text"
     utc: [
       'America/Indiana/Marengo',
       'America/Indiana/Vevay',
@@ -263,7 +263,7 @@ export const TIMEZONES = {
     abbr: 'VST',
     offset: -4.5,
     isdst: false,
-    text: '(UTC-04:30) Caracas',
+    handle: '(UTC-04:30) Caracas', // originally called "text"
     utc: ['America/Caracas'],
   },
   '(UTC-04:00) Asuncion': {
@@ -271,7 +271,7 @@ export const TIMEZONES = {
     abbr: 'PYT',
     offset: -4,
     isdst: false,
-    text: '(UTC-04:00) Asuncion',
+    handle: '(UTC-04:00) Asuncion', // originally called "text"
     utc: ['America/Asuncion'],
   },
   '(UTC-04:00) Atlantic Time (Canada)': {
@@ -279,7 +279,7 @@ export const TIMEZONES = {
     abbr: 'ADT',
     offset: -3,
     isdst: true,
-    text: '(UTC-04:00) Atlantic Time (Canada)',
+    handle: '(UTC-04:00) Atlantic Time (Canada)', // originally called "text"
     utc: [
       'America/Glace_Bay',
       'America/Goose_Bay',
@@ -294,7 +294,7 @@ export const TIMEZONES = {
     abbr: 'CBST',
     offset: -4,
     isdst: false,
-    text: '(UTC-04:00) Cuiaba',
+    handle: '(UTC-04:00) Cuiaba', // originally called "text"
     utc: ['America/Campo_Grande', 'America/Cuiaba'],
   },
   '(UTC-04:00) Georgetown, La Paz, Manaus, San Juan': {
@@ -302,7 +302,7 @@ export const TIMEZONES = {
     abbr: 'SWST',
     offset: -4,
     isdst: false,
-    text: '(UTC-04:00) Georgetown, La Paz, Manaus, San Juan',
+    handle: '(UTC-04:00) Georgetown, La Paz, Manaus, San Juan', // originally called "text"
     utc: [
       'America/Anguilla',
       'America/Antigua',
@@ -341,7 +341,7 @@ export const TIMEZONES = {
     abbr: 'PSST',
     offset: -4,
     isdst: false,
-    text: '(UTC-04:00) Santiago',
+    handle: '(UTC-04:00) Santiago', // originally called "text"
     utc: ['America/Santiago', 'Antarctica/Palmer'],
   },
   '(UTC-03:30) Newfoundland': {
@@ -349,7 +349,7 @@ export const TIMEZONES = {
     abbr: 'NDT',
     offset: -2.5,
     isdst: true,
-    text: '(UTC-03:30) Newfoundland',
+    handle: '(UTC-03:30) Newfoundland', // originally called "text"
     utc: ['America/St_Johns'],
   },
   '(UTC-03:00) Brasilia': {
@@ -357,7 +357,7 @@ export const TIMEZONES = {
     abbr: 'ESAST',
     offset: -3,
     isdst: false,
-    text: '(UTC-03:00) Brasilia',
+    handle: '(UTC-03:00) Brasilia', // originally called "text"
     utc: ['America/Sao_Paulo'],
   },
   '(UTC-03:00) Buenos Aires': {
@@ -365,7 +365,7 @@ export const TIMEZONES = {
     abbr: 'AST',
     offset: -3,
     isdst: false,
-    text: '(UTC-03:00) Buenos Aires',
+    handle: '(UTC-03:00) Buenos Aires', // originally called "text"
     utc: [
       'America/Argentina/Buenos_Aires',
       'America/Argentina/Catamarca',
@@ -391,7 +391,7 @@ export const TIMEZONES = {
     abbr: 'SEST',
     offset: -3,
     isdst: false,
-    text: '(UTC-03:00) Cayenne, Fortaleza',
+    handle: '(UTC-03:00) Cayenne, Fortaleza', // originally called "text"
     utc: [
       'America/Araguaina',
       'America/Belem',
@@ -411,7 +411,7 @@ export const TIMEZONES = {
     abbr: 'GDT',
     offset: -3,
     isdst: true,
-    text: '(UTC-03:00) Greenland',
+    handle: '(UTC-03:00) Greenland', // originally called "text"
     utc: ['America/Godthab'],
   },
   '(UTC-03:00) Montevideo': {
@@ -419,7 +419,7 @@ export const TIMEZONES = {
     abbr: 'MST',
     offset: -3,
     isdst: false,
-    text: '(UTC-03:00) Montevideo',
+    handle: '(UTC-03:00) Montevideo', // originally called "text"
     utc: ['America/Montevideo'],
   },
   '(UTC-03:00) Salvador': {
@@ -427,7 +427,7 @@ export const TIMEZONES = {
     abbr: 'BST',
     offset: -3,
     isdst: false,
-    text: '(UTC-03:00) Salvador',
+    handle: '(UTC-03:00) Salvador', // originally called "text"
     utc: ['America/Bahia'],
   },
   '(UTC-02:00) Coordinated Universal Time-02': {
@@ -435,7 +435,7 @@ export const TIMEZONES = {
     abbr: 'U',
     offset: -2,
     isdst: false,
-    text: '(UTC-02:00) Coordinated Universal Time-02',
+    handle: '(UTC-02:00) Coordinated Universal Time-02', // originally called "text"
     utc: ['America/Noronha', 'Atlantic/South_Georgia', 'Etc/GMT+2'],
   },
   '(UTC-02:00) Mid-Atlantic - Old': {
@@ -443,7 +443,7 @@ export const TIMEZONES = {
     abbr: 'MDT',
     offset: -1,
     isdst: true,
-    text: '(UTC-02:00) Mid-Atlantic - Old',
+    handle: '(UTC-02:00) Mid-Atlantic - Old', // originally called "text"
     utc: [],
   },
   '(UTC-01:00) Azores': {
@@ -451,7 +451,7 @@ export const TIMEZONES = {
     abbr: 'ADT',
     offset: 0,
     isdst: true,
-    text: '(UTC-01:00) Azores',
+    handle: '(UTC-01:00) Azores', // originally called "text"
     utc: ['America/Scoresbysund', 'Atlantic/Azores'],
   },
   '(UTC-01:00) Cape Verde Is.': {
@@ -459,7 +459,7 @@ export const TIMEZONES = {
     abbr: 'CVST',
     offset: -1,
     isdst: false,
-    text: '(UTC-01:00) Cape Verde Is.',
+    handle: '(UTC-01:00) Cape Verde Is.', // originally called "text"
     utc: ['Atlantic/Cape_Verde', 'Etc/GMT+1'],
   },
   '(UTC) Casablanca': {
@@ -467,7 +467,7 @@ export const TIMEZONES = {
     abbr: 'MDT',
     offset: 1,
     isdst: true,
-    text: '(UTC) Casablanca',
+    handle: '(UTC) Casablanca', // originally called "text"
     utc: ['Africa/Casablanca', 'Africa/El_Aaiun'],
   },
   '(UTC) Coordinated Universal Time': {
@@ -475,7 +475,7 @@ export const TIMEZONES = {
     abbr: 'UTC',
     offset: 0,
     isdst: false,
-    text: '(UTC) Coordinated Universal Time',
+    handle: '(UTC) Coordinated Universal Time', // originally called "text"
     utc: ['America/Danmarkshavn', 'Etc/GMT'],
   },
   '(UTC) Edinburgh, London': {
@@ -483,7 +483,7 @@ export const TIMEZONES = {
     abbr: 'GMT',
     offset: 0,
     isdst: false,
-    text: '(UTC) Edinburgh, London',
+    handle: '(UTC) Edinburgh, London', // originally called "text"
     utc: [
       'Europe/Isle_of_Man',
       'Europe/Guernsey',
@@ -496,7 +496,7 @@ export const TIMEZONES = {
     abbr: 'BST',
     offset: 1,
     isdst: true,
-    text: '(UTC+01:00) Edinburgh, London',
+    handle: '(UTC+01:00) Edinburgh, London', // originally called "text"
     utc: [
       'Europe/Isle_of_Man',
       'Europe/Guernsey',
@@ -509,7 +509,7 @@ export const TIMEZONES = {
     abbr: 'GDT',
     offset: 1,
     isdst: true,
-    text: '(UTC) Dublin, Lisbon',
+    handle: '(UTC) Dublin, Lisbon', // originally called "text"
     utc: [
       'Atlantic/Canary',
       'Atlantic/Faeroe',
@@ -523,7 +523,7 @@ export const TIMEZONES = {
     abbr: 'GST',
     offset: 0,
     isdst: false,
-    text: '(UTC) Monrovia, Reykjavik',
+    handle: '(UTC) Monrovia, Reykjavik', // originally called "text"
     utc: [
       'Africa/Abidjan',
       'Africa/Accra',
@@ -547,7 +547,7 @@ export const TIMEZONES = {
     abbr: 'WEDT',
     offset: 2,
     isdst: true,
-    text: '(UTC+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna',
+    handle: '(UTC+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna', // originally called "text"
     utc: [
       'Arctic/Longyearbyen',
       'Europe/Amsterdam',
@@ -573,7 +573,7 @@ export const TIMEZONES = {
     abbr: 'CEDT',
     offset: 2,
     isdst: true,
-    text: '(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague',
+    handle: '(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague', // originally called "text"
     utc: [
       'Europe/Belgrade',
       'Europe/Bratislava',
@@ -589,7 +589,7 @@ export const TIMEZONES = {
     abbr: 'RDT',
     offset: 2,
     isdst: true,
-    text: '(UTC+01:00) Brussels, Copenhagen, Madrid, Paris',
+    handle: '(UTC+01:00) Brussels, Copenhagen, Madrid, Paris', // originally called "text"
     utc: [
       'Africa/Ceuta',
       'Europe/Brussels',
@@ -603,7 +603,7 @@ export const TIMEZONES = {
     abbr: 'CEDT',
     offset: 2,
     isdst: true,
-    text: '(UTC+01:00) Sarajevo, Skopje, Warsaw, Zagreb',
+    handle: '(UTC+01:00) Sarajevo, Skopje, Warsaw, Zagreb', // originally called "text"
     utc: ['Europe/Sarajevo', 'Europe/Skopje', 'Europe/Warsaw', 'Europe/Zagreb'],
   },
   '(UTC+01:00) West Central Africa': {
@@ -611,7 +611,7 @@ export const TIMEZONES = {
     abbr: 'WCAST',
     offset: 1,
     isdst: false,
-    text: '(UTC+01:00) West Central Africa',
+    handle: '(UTC+01:00) West Central Africa', // originally called "text"
     utc: [
       'Africa/Algiers',
       'Africa/Bangui',
@@ -634,7 +634,7 @@ export const TIMEZONES = {
     abbr: 'NST',
     offset: 1,
     isdst: false,
-    text: '(UTC+01:00) Windhoek',
+    handle: '(UTC+01:00) Windhoek', // originally called "text"
     utc: ['Africa/Windhoek'],
   },
   '(UTC+02:00) Athens, Bucharest': {
@@ -642,7 +642,7 @@ export const TIMEZONES = {
     abbr: 'GDT',
     offset: 3,
     isdst: true,
-    text: '(UTC+02:00) Athens, Bucharest',
+    handle: '(UTC+02:00) Athens, Bucharest', // originally called "text"
     utc: [
       'Asia/Nicosia',
       'Europe/Athens',
@@ -655,7 +655,7 @@ export const TIMEZONES = {
     abbr: 'MEDT',
     offset: 3,
     isdst: true,
-    text: '(UTC+02:00) Beirut',
+    handle: '(UTC+02:00) Beirut', // originally called "text"
     utc: ['Asia/Beirut'],
   },
   '(UTC+02:00) Cairo': {
@@ -663,7 +663,7 @@ export const TIMEZONES = {
     abbr: 'EST',
     offset: 2,
     isdst: false,
-    text: '(UTC+02:00) Cairo',
+    handle: '(UTC+02:00) Cairo', // originally called "text"
     utc: ['Africa/Cairo'],
   },
   '(UTC+02:00) Damascus': {
@@ -671,7 +671,7 @@ export const TIMEZONES = {
     abbr: 'SDT',
     offset: 3,
     isdst: true,
-    text: '(UTC+02:00) Damascus',
+    handle: '(UTC+02:00) Damascus', // originally called "text"
     utc: ['Asia/Damascus'],
   },
   '(UTC+02:00) E. Europe': {
@@ -679,7 +679,7 @@ export const TIMEZONES = {
     abbr: 'EEDT',
     offset: 3,
     isdst: true,
-    text: '(UTC+02:00) E. Europe',
+    handle: '(UTC+02:00) E. Europe', // originally called "text"
     utc: [
       'Asia/Nicosia',
       'Europe/Athens',
@@ -702,7 +702,7 @@ export const TIMEZONES = {
     abbr: 'SAST',
     offset: 2,
     isdst: false,
-    text: '(UTC+02:00) Harare, Pretoria',
+    handle: '(UTC+02:00) Harare, Pretoria', // originally called "text"
     utc: [
       'Africa/Blantyre',
       'Africa/Bujumbura',
@@ -723,7 +723,7 @@ export const TIMEZONES = {
     abbr: 'FDT',
     offset: 3,
     isdst: true,
-    text: '(UTC+02:00) Helsinki, Kyiv, Riga, Sofia, Tallinn, Vilnius',
+    handle: '(UTC+02:00) Helsinki, Kyiv, Riga, Sofia, Tallinn, Vilnius', // originally called "text"
     utc: [
       'Europe/Helsinki',
       'Europe/Kyiv',
@@ -741,7 +741,7 @@ export const TIMEZONES = {
     abbr: 'TDT',
     offset: 3,
     isdst: false,
-    text: '(UTC+03:00) Istanbul',
+    handle: '(UTC+03:00) Istanbul', // originally called "text"
     utc: ['Europe/Istanbul'],
   },
   '(UTC+02:00) Jerusalem': {
@@ -749,7 +749,7 @@ export const TIMEZONES = {
     abbr: 'JDT',
     offset: 3,
     isdst: true,
-    text: '(UTC+02:00) Jerusalem',
+    handle: '(UTC+02:00) Jerusalem', // originally called "text"
     utc: ['Asia/Jerusalem'],
   },
   '(UTC+02:00) Tripoli': {
@@ -757,7 +757,7 @@ export const TIMEZONES = {
     abbr: 'LST',
     offset: 2,
     isdst: false,
-    text: '(UTC+02:00) Tripoli',
+    handle: '(UTC+02:00) Tripoli', // originally called "text"
     utc: ['Africa/Tripoli'],
   },
   '(UTC+03:00) Amman': {
@@ -765,7 +765,7 @@ export const TIMEZONES = {
     abbr: 'JST',
     offset: 3,
     isdst: false,
-    text: '(UTC+03:00) Amman',
+    handle: '(UTC+03:00) Amman', // originally called "text"
     utc: ['Asia/Amman'],
   },
   '(UTC+03:00) Baghdad': {
@@ -773,7 +773,7 @@ export const TIMEZONES = {
     abbr: 'AST',
     offset: 3,
     isdst: false,
-    text: '(UTC+03:00) Baghdad',
+    handle: '(UTC+03:00) Baghdad', // originally called "text"
     utc: ['Asia/Baghdad'],
   },
   '(UTC+02:00) Kaliningrad': {
@@ -781,7 +781,7 @@ export const TIMEZONES = {
     abbr: 'KST',
     offset: 3,
     isdst: false,
-    text: '(UTC+02:00) Kaliningrad',
+    handle: '(UTC+02:00) Kaliningrad', // originally called "text"
     utc: ['Europe/Kaliningrad'],
   },
   '(UTC+03:00) Kuwait, Riyadh': {
@@ -789,7 +789,7 @@ export const TIMEZONES = {
     abbr: 'AST',
     offset: 3,
     isdst: false,
-    text: '(UTC+03:00) Kuwait, Riyadh',
+    handle: '(UTC+03:00) Kuwait, Riyadh', // originally called "text"
     utc: [
       'Asia/Aden',
       'Asia/Bahrain',
@@ -803,7 +803,7 @@ export const TIMEZONES = {
     abbr: 'EAST',
     offset: 3,
     isdst: false,
-    text: '(UTC+03:00) Nairobi',
+    handle: '(UTC+03:00) Nairobi', // originally called "text"
     utc: [
       'Africa/Addis_Ababa',
       'Africa/Asmera',
@@ -826,7 +826,7 @@ export const TIMEZONES = {
     abbr: 'MSK',
     offset: 3,
     isdst: false,
-    text: '(UTC+03:00) Moscow, St. Petersburg, Volgograd, Minsk',
+    handle: '(UTC+03:00) Moscow, St. Petersburg, Volgograd, Minsk', // originally called "text"
     utc: [
       'Europe/Kirov',
       'Europe/Moscow',
@@ -840,7 +840,7 @@ export const TIMEZONES = {
     abbr: 'SAMT',
     offset: 4,
     isdst: false,
-    text: '(UTC+04:00) Samara, Ulyanovsk, Saratov',
+    handle: '(UTC+04:00) Samara, Ulyanovsk, Saratov', // originally called "text"
     utc: ['Europe/Astrakhan', 'Europe/Samara', 'Europe/Ulyanovsk'],
   },
   '(UTC+03:30) Tehran': {
@@ -848,7 +848,7 @@ export const TIMEZONES = {
     abbr: 'IDT',
     offset: 4.5,
     isdst: true,
-    text: '(UTC+03:30) Tehran',
+    handle: '(UTC+03:30) Tehran', // originally called "text"
     utc: ['Asia/Tehran'],
   },
   '(UTC+04:00) Abu Dhabi, Muscat': {
@@ -856,7 +856,7 @@ export const TIMEZONES = {
     abbr: 'AST',
     offset: 4,
     isdst: false,
-    text: '(UTC+04:00) Abu Dhabi, Muscat',
+    handle: '(UTC+04:00) Abu Dhabi, Muscat', // originally called "text"
     utc: ['Asia/Dubai', 'Asia/Muscat', 'Etc/GMT-4'],
   },
   '(UTC+04:00) Baku': {
@@ -864,7 +864,7 @@ export const TIMEZONES = {
     abbr: 'ADT',
     offset: 5,
     isdst: true,
-    text: '(UTC+04:00) Baku',
+    handle: '(UTC+04:00) Baku', // originally called "text"
     utc: ['Asia/Baku'],
   },
   '(UTC+04:00) Port Louis': {
@@ -872,7 +872,7 @@ export const TIMEZONES = {
     abbr: 'MST',
     offset: 4,
     isdst: false,
-    text: '(UTC+04:00) Port Louis',
+    handle: '(UTC+04:00) Port Louis', // originally called "text"
     utc: ['Indian/Mahe', 'Indian/Mauritius', 'Indian/Reunion'],
   },
   '(UTC+04:00) Tbilisi': {
@@ -880,7 +880,7 @@ export const TIMEZONES = {
     abbr: 'GET',
     offset: 4,
     isdst: false,
-    text: '(UTC+04:00) Tbilisi',
+    handle: '(UTC+04:00) Tbilisi', // originally called "text"
     utc: ['Asia/Tbilisi'],
   },
   '(UTC+04:00) Yerevan': {
@@ -888,7 +888,7 @@ export const TIMEZONES = {
     abbr: 'CST',
     offset: 4,
     isdst: false,
-    text: '(UTC+04:00) Yerevan',
+    handle: '(UTC+04:00) Yerevan', // originally called "text"
     utc: ['Asia/Yerevan'],
   },
   '(UTC+04:30) Kabul': {
@@ -896,7 +896,7 @@ export const TIMEZONES = {
     abbr: 'AST',
     offset: 4.5,
     isdst: false,
-    text: '(UTC+04:30) Kabul',
+    handle: '(UTC+04:30) Kabul', // originally called "text"
     utc: ['Asia/Kabul'],
   },
   '(UTC+05:00) Ashgabat, Tashkent': {
@@ -904,7 +904,7 @@ export const TIMEZONES = {
     abbr: 'WAST',
     offset: 5,
     isdst: false,
-    text: '(UTC+05:00) Ashgabat, Tashkent',
+    handle: '(UTC+05:00) Ashgabat, Tashkent', // originally called "text"
     utc: [
       'Antarctica/Mawson',
       'Asia/Aqtau',
@@ -924,7 +924,7 @@ export const TIMEZONES = {
     abbr: 'YEKT',
     offset: 5,
     isdst: false,
-    text: '(UTC+05:00) Yekaterinburg',
+    handle: '(UTC+05:00) Yekaterinburg', // originally called "text"
     utc: ['Asia/Yekaterinburg'],
   },
   '(UTC+05:00) Islamabad, Karachi': {
@@ -932,7 +932,7 @@ export const TIMEZONES = {
     abbr: 'PKT',
     offset: 5,
     isdst: false,
-    text: '(UTC+05:00) Islamabad, Karachi',
+    handle: '(UTC+05:00) Islamabad, Karachi', // originally called "text"
     utc: ['Asia/Karachi'],
   },
   '(UTC+05:30) Chennai, Kolkata, Mumbai, New Delhi': {
@@ -940,7 +940,7 @@ export const TIMEZONES = {
     abbr: 'IST',
     offset: 5.5,
     isdst: false,
-    text: '(UTC+05:30) Chennai, Kolkata, Mumbai, New Delhi',
+    handle: '(UTC+05:30) Chennai, Kolkata, Mumbai, New Delhi', // originally called "text"
     utc: ['Asia/Kolkata', 'Asia/Calcutta'],
   },
   '(UTC+05:30) Sri Jayawardenepura': {
@@ -948,7 +948,7 @@ export const TIMEZONES = {
     abbr: 'SLST',
     offset: 5.5,
     isdst: false,
-    text: '(UTC+05:30) Sri Jayawardenepura',
+    handle: '(UTC+05:30) Sri Jayawardenepura', // originally called "text"
     utc: ['Asia/Colombo'],
   },
   '(UTC+05:45) Kathmandu': {
@@ -956,7 +956,7 @@ export const TIMEZONES = {
     abbr: 'NST',
     offset: 5.75,
     isdst: false,
-    text: '(UTC+05:45) Kathmandu',
+    handle: '(UTC+05:45) Kathmandu', // originally called "text"
     utc: ['Asia/Kathmandu'],
   },
   '(UTC+06:00) Nur-Sultan (Astana)': {
@@ -964,7 +964,7 @@ export const TIMEZONES = {
     abbr: 'CAST',
     offset: 6,
     isdst: false,
-    text: '(UTC+06:00) Nur-Sultan (Astana)',
+    handle: '(UTC+06:00) Nur-Sultan (Astana)', // originally called "text"
     utc: [
       'Antarctica/Vostok',
       'Asia/Almaty',
@@ -980,7 +980,7 @@ export const TIMEZONES = {
     abbr: 'BST',
     offset: 6,
     isdst: false,
-    text: '(UTC+06:00) Dhaka',
+    handle: '(UTC+06:00) Dhaka', // originally called "text"
     utc: ['Asia/Dhaka', 'Asia/Thimphu'],
   },
   '(UTC+06:30) Yangon (Rangoon)': {
@@ -988,7 +988,7 @@ export const TIMEZONES = {
     abbr: 'MST',
     offset: 6.5,
     isdst: false,
-    text: '(UTC+06:30) Yangon (Rangoon)',
+    handle: '(UTC+06:30) Yangon (Rangoon)', // originally called "text"
     utc: ['Asia/Rangoon', 'Indian/Cocos'],
   },
   '(UTC+07:00) Bangkok, Hanoi, Jakarta': {
@@ -996,7 +996,7 @@ export const TIMEZONES = {
     abbr: 'SAST',
     offset: 7,
     isdst: false,
-    text: '(UTC+07:00) Bangkok, Hanoi, Jakarta',
+    handle: '(UTC+07:00) Bangkok, Hanoi, Jakarta', // originally called "text"
     utc: [
       'Antarctica/Davis',
       'Asia/Bangkok',
@@ -1015,7 +1015,7 @@ export const TIMEZONES = {
     abbr: 'NCAST',
     offset: 7,
     isdst: false,
-    text: '(UTC+07:00) Novosibirsk',
+    handle: '(UTC+07:00) Novosibirsk', // originally called "text"
     utc: ['Asia/Novokuznetsk', 'Asia/Novosibirsk', 'Asia/Omsk'],
   },
   '(UTC+08:00) Beijing, Chongqing, Hong Kong, Urumqi': {
@@ -1023,7 +1023,7 @@ export const TIMEZONES = {
     abbr: 'CST',
     offset: 8,
     isdst: false,
-    text: '(UTC+08:00) Beijing, Chongqing, Hong Kong, Urumqi',
+    handle: '(UTC+08:00) Beijing, Chongqing, Hong Kong, Urumqi', // originally called "text"
     utc: ['Asia/Hong_Kong', 'Asia/Macau', 'Asia/Shanghai'],
   },
   '(UTC+08:00) Krasnoyarsk': {
@@ -1031,7 +1031,7 @@ export const TIMEZONES = {
     abbr: 'NAST',
     offset: 8,
     isdst: false,
-    text: '(UTC+08:00) Krasnoyarsk',
+    handle: '(UTC+08:00) Krasnoyarsk', // originally called "text"
     utc: ['Asia/Krasnoyarsk'],
   },
   '(UTC+08:00) Kuala Lumpur, Singapore': {
@@ -1039,7 +1039,7 @@ export const TIMEZONES = {
     abbr: 'MPST',
     offset: 8,
     isdst: false,
-    text: '(UTC+08:00) Kuala Lumpur, Singapore',
+    handle: '(UTC+08:00) Kuala Lumpur, Singapore', // originally called "text"
     utc: [
       'Asia/Brunei',
       'Asia/Kuala_Lumpur',
@@ -1055,7 +1055,7 @@ export const TIMEZONES = {
     abbr: 'WAST',
     offset: 8,
     isdst: false,
-    text: '(UTC+08:00) Perth',
+    handle: '(UTC+08:00) Perth', // originally called "text"
     utc: ['Antarctica/Casey', 'Australia/Perth'],
   },
   '(UTC+08:00) Taipei': {
@@ -1063,7 +1063,7 @@ export const TIMEZONES = {
     abbr: 'TST',
     offset: 8,
     isdst: false,
-    text: '(UTC+08:00) Taipei',
+    handle: '(UTC+08:00) Taipei', // originally called "text"
     utc: ['Asia/Taipei'],
   },
   '(UTC+08:00) Ulaanbaatar': {
@@ -1071,7 +1071,7 @@ export const TIMEZONES = {
     abbr: 'UST',
     offset: 8,
     isdst: false,
-    text: '(UTC+08:00) Ulaanbaatar',
+    handle: '(UTC+08:00) Ulaanbaatar', // originally called "text"
     utc: ['Asia/Choibalsan', 'Asia/Ulaanbaatar'],
   },
   '(UTC+08:00) Irkutsk': {
@@ -1079,7 +1079,7 @@ export const TIMEZONES = {
     abbr: 'NAEST',
     offset: 8,
     isdst: false,
-    text: '(UTC+08:00) Irkutsk',
+    handle: '(UTC+08:00) Irkutsk', // originally called "text"
     utc: ['Asia/Irkutsk'],
   },
   '(UTC+09:00) Osaka, Sapporo, Tokyo': {
@@ -1087,7 +1087,7 @@ export const TIMEZONES = {
     abbr: 'JST',
     offset: 9,
     isdst: false,
-    text: '(UTC+09:00) Osaka, Sapporo, Tokyo',
+    handle: '(UTC+09:00) Osaka, Sapporo, Tokyo', // originally called "text"
     utc: [
       'Asia/Dili',
       'Asia/Jayapura',
@@ -1101,7 +1101,7 @@ export const TIMEZONES = {
     abbr: 'KST',
     offset: 9,
     isdst: false,
-    text: '(UTC+09:00) Seoul',
+    handle: '(UTC+09:00) Seoul', // originally called "text"
     utc: ['Asia/Pyongyang', 'Asia/Seoul'],
   },
   '(UTC+09:30) Adelaide': {
@@ -1109,7 +1109,7 @@ export const TIMEZONES = {
     abbr: 'CAST',
     offset: 9.5,
     isdst: false,
-    text: '(UTC+09:30) Adelaide',
+    handle: '(UTC+09:30) Adelaide', // originally called "text"
     utc: ['Australia/Adelaide', 'Australia/Broken_Hill'],
   },
   '(UTC+09:30) Darwin': {
@@ -1117,7 +1117,7 @@ export const TIMEZONES = {
     abbr: 'ACST',
     offset: 9.5,
     isdst: false,
-    text: '(UTC+09:30) Darwin',
+    handle: '(UTC+09:30) Darwin', // originally called "text"
     utc: ['Australia/Darwin'],
   },
   '(UTC+10:00) Brisbane': {
@@ -1125,7 +1125,7 @@ export const TIMEZONES = {
     abbr: 'EAST',
     offset: 10,
     isdst: false,
-    text: '(UTC+10:00) Brisbane',
+    handle: '(UTC+10:00) Brisbane', // originally called "text"
     utc: ['Australia/Brisbane', 'Australia/Lindeman'],
   },
   '(UTC+10:00) Canberra, Melbourne, Sydney': {
@@ -1133,7 +1133,7 @@ export const TIMEZONES = {
     abbr: 'AEST',
     offset: 10,
     isdst: false,
-    text: '(UTC+10:00) Canberra, Melbourne, Sydney',
+    handle: '(UTC+10:00) Canberra, Melbourne, Sydney', // originally called "text"
     utc: ['Australia/Melbourne', 'Australia/Sydney'],
   },
   '(UTC+10:00) Guam, Port Moresby': {
@@ -1141,7 +1141,7 @@ export const TIMEZONES = {
     abbr: 'WPST',
     offset: 10,
     isdst: false,
-    text: '(UTC+10:00) Guam, Port Moresby',
+    handle: '(UTC+10:00) Guam, Port Moresby', // originally called "text"
     utc: [
       'Antarctica/DumontDUrville',
       'Etc/GMT-10',
@@ -1156,7 +1156,7 @@ export const TIMEZONES = {
     abbr: 'TST',
     offset: 10,
     isdst: false,
-    text: '(UTC+10:00) Hobart',
+    handle: '(UTC+10:00) Hobart', // originally called "text"
     utc: ['Australia/Currie', 'Australia/Hobart'],
   },
   '(UTC+09:00) Yakutsk': {
@@ -1164,7 +1164,7 @@ export const TIMEZONES = {
     abbr: 'YST',
     offset: 9,
     isdst: false,
-    text: '(UTC+09:00) Yakutsk',
+    handle: '(UTC+09:00) Yakutsk', // originally called "text"
     utc: ['Asia/Chita', 'Asia/Khandyga', 'Asia/Yakutsk'],
   },
   '(UTC+11:00) Solomon Is., New Caledonia': {
@@ -1172,7 +1172,7 @@ export const TIMEZONES = {
     abbr: 'CPST',
     offset: 11,
     isdst: false,
-    text: '(UTC+11:00) Solomon Is., New Caledonia',
+    handle: '(UTC+11:00) Solomon Is., New Caledonia', // originally called "text"
     utc: [
       'Antarctica/Macquarie',
       'Etc/GMT-11',
@@ -1188,7 +1188,7 @@ export const TIMEZONES = {
     abbr: 'VST',
     offset: 11,
     isdst: false,
-    text: '(UTC+11:00) Vladivostok',
+    handle: '(UTC+11:00) Vladivostok', // originally called "text"
     utc: ['Asia/Sakhalin', 'Asia/Ust-Nera', 'Asia/Vladivostok'],
   },
   '(UTC+12:00) Auckland, Wellington': {
@@ -1196,7 +1196,7 @@ export const TIMEZONES = {
     abbr: 'NZST',
     offset: 12,
     isdst: false,
-    text: '(UTC+12:00) Auckland, Wellington',
+    handle: '(UTC+12:00) Auckland, Wellington', // originally called "text"
     utc: ['Antarctica/McMurdo', 'Pacific/Auckland'],
   },
   '(UTC+12:00) Coordinated Universal Time+12': {
@@ -1204,7 +1204,7 @@ export const TIMEZONES = {
     abbr: 'U',
     offset: 12,
     isdst: false,
-    text: '(UTC+12:00) Coordinated Universal Time+12',
+    handle: '(UTC+12:00) Coordinated Universal Time+12', // originally called "text"
     utc: [
       'Etc/GMT-12',
       'Pacific/Funafuti',
@@ -1221,7 +1221,7 @@ export const TIMEZONES = {
     abbr: 'FST',
     offset: 12,
     isdst: false,
-    text: '(UTC+12:00) Fiji',
+    handle: '(UTC+12:00) Fiji', // originally called "text"
     utc: ['Pacific/Fiji'],
   },
   '(UTC+12:00) Magadan': {
@@ -1229,7 +1229,7 @@ export const TIMEZONES = {
     abbr: 'MST',
     offset: 12,
     isdst: false,
-    text: '(UTC+12:00) Magadan',
+    handle: '(UTC+12:00) Magadan', // originally called "text"
     utc: [
       'Asia/Anadyr',
       'Asia/Kamchatka',
@@ -1242,7 +1242,7 @@ export const TIMEZONES = {
     abbr: 'KDT',
     offset: 13,
     isdst: true,
-    text: '(UTC+12:00) Petropavlovsk-Kamchatsky - Old',
+    handle: '(UTC+12:00) Petropavlovsk-Kamchatsky - Old', // originally called "text"
     utc: ['Asia/Kamchatka'],
   },
   "(UTC+13:00) Nuku'alofa": {
@@ -1250,7 +1250,7 @@ export const TIMEZONES = {
     abbr: 'TST',
     offset: 13,
     isdst: false,
-    text: "(UTC+13:00) Nuku'alofa",
+    handle: "(UTC+13:00) Nuku'alofa", // originally called "text"
     utc: [
       'Etc/GMT-13',
       'Pacific/Enderbury',
@@ -1263,7 +1263,7 @@ export const TIMEZONES = {
     abbr: 'SST',
     offset: 13,
     isdst: false,
-    text: '(UTC+13:00) Samoa',
+    handle: '(UTC+13:00) Samoa', // originally called "text"
     utc: ['Pacific/Apia'],
   },
 } as const;
