@@ -8,6 +8,7 @@ export * from './extract-error-details';
 export * from './format-zod-error';
 export * from './frontend-response-error';
 export * from './get-filename-from-error-stack';
+export * from './get-initials';
 export * from './get-random-number';
 export * from './lowercase';
 export * from './mock-node-packages';
