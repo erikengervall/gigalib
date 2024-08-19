@@ -1,6 +1,6 @@
 {
   "name": "@engervall/shared",
-  "version": "1.0.25",
+  "version": "1.0.26",
   "main": "dist/index.js",
   "repository": "git@github.com:erikengervall/gigalib.git",
   "author": "Erik Engervall <erik.engervall@gmail.com>",
