@@ -47,29 +47,38 @@ exports[`should create and format backend files: fs.writeFileSync 1`] = `
   [
     "packages/backend/src/handlers/v1/user/get-handler.ts",
     "
-  import { API } from 'shared';
+  import { API, ServiceError } from 'shared';
   import type { RequestHandler } from 'express';
   
   export const getHandler: RequestHandler = async (req, res) => {
     
 const parsedPayload = API.V1.User.Get.Payload.safeParse(req.body);
 if (!parsedPayload.success) {
-  res.status(400).json(); // TODO: Include error details.
-  return;
+    throw new ServiceError({
+      externalErrorCode: 'invalid_payload',
+      internalErrorMessage: 'Invalid request payload.',
+      externalHttpStatusCode: 400,
+    });
 }
 
     
   const parsedQueryParams = API.V1.User.Get.QueryParams.safeParse(req.query);
   if (!parsedQueryParams.success) {
-    res.status(400).json(); // TODO: Include error details.
-    return;
+    throw new ServiceError({
+      externalErrorCode: 'invalid_query_params',
+      internalErrorMessage: 'Invalid request query params.',
+      externalHttpStatusCode: 400,
+    });
   }
 
     
   const parsedParams = API.V1.User.Get.Params.safeParse(req.params);
   if (!parsedParams.success) {
-    res.status(400).json(); // TODO: Include error details.
-    return;
+    throw new ServiceError({
+      externalErrorCode: 'invalid_params',
+      internalErrorMessage: 'Invalid request params.',
+      externalHttpStatusCode: 400,
+    });
   }
   
     

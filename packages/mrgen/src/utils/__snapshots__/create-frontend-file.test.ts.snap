@@ -51,8 +51,8 @@ exports[`should create a frontend file for a GET request: writeFileSync 1`] = `
   [
     "packages/frontend1/src/api/hooks/v1-user-get.ts",
     "
-    import { apiClient } from '../api-client';
-    import type { FrontendResponseError } from '../frontend-response-error';
+    import { apiClient } from './api-client';
+    import type { FrontendResponseError } from '@engervall/shared';
     import { UseQueryOptions, useQuery } from '@tanstack/react-query';
     import { API } from 'shared';
     import QueryString from 'qs';
@@ -134,8 +134,8 @@ exports[`should create a frontend file for a POST request: writeFileSync 1`] = `
   [
     "packages/frontend1/src/api/hooks/v1-user-get.ts",
     "
-    import { apiClient } from '../api-client';
-    import type { FrontendResponseError } from '../frontend-response-error';
+    import { apiClient } from './api-client';
+    import type { FrontendResponseError } from '@engervall/shared';
     import { UseMutationOptions, useMutation } from '@tanstack/react-query';
     import { API } from 'shared';
     import QueryString from 'qs';
