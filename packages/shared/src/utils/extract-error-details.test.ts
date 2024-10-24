@@ -26,6 +26,66 @@ describe('extractErrorDetails', () => {
         errorStack: customError.stack,
       });
     });
+
+    it('should handle custom error with "errorMessage" property', () => {
+      class ErrorWithErrorMessage extends Error {
+        errorMessage: string;
+        constructor(message: string) {
+          super();
+          this.errorMessage = message;
+        }
+      }
+
+      const errorMessage = 'potato with message';
+      const error = new ErrorWithErrorMessage(errorMessage);
+      const result = extractErrorDetails(error);
+
+      expect(result).toEqual({
+        errorName: 'Error',
+        errorMessage: errorMessage,
+        errorStack: error.stack,
+      });
+    });
+
+    it('should handle custom error with "internalErrorMessage" property', () => {
+      class ErrorWithInternalErrorMessage extends Error {
+        internalErrorMessage: string;
+        constructor(message: string) {
+          super();
+          this.internalErrorMessage = message;
+        }
+      }
+
+      const errorMessage = 'potato with internal message';
+      const error = new ErrorWithInternalErrorMessage(errorMessage);
+      const result = extractErrorDetails(error);
+
+      expect(result).toEqual({
+        errorName: 'Error',
+        errorMessage: errorMessage,
+        errorStack: error.stack,
+      });
+    });
+
+    it('should handle custom error with "externalErrorMessage" property', () => {
+      class ErrorWithExternalErrorMessage extends Error {
+        externalErrorMessage: string;
+        constructor(message: string) {
+          super();
+          this.externalErrorMessage = message;
+        }
+      }
+
+      const errorMessage = 'potato with external message';
+      const error = new ErrorWithExternalErrorMessage(errorMessage);
+      const result = extractErrorDetails(error);
+
+      expect(result).toEqual({
+        errorName: 'Error',
+        errorMessage: errorMessage,
+        errorStack: error.stack,
+      });
+    });
   });
 
   describe('unknown errors', () => {
