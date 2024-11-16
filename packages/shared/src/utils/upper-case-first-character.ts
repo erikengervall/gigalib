@@ -1,3 +1,4 @@
 export function upperCaseFirstCharacter(str: string) {
-  return str.charAt(0).toUpperCase() + str.slice(1);
+  const lowerCase = str.toLowerCase();
+  return lowerCase.charAt(0).toUpperCase() + lowerCase.slice(1);
 }
