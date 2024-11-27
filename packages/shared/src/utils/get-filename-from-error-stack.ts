@@ -4,13 +4,13 @@ const FALLBACK = 'N/A (filename)';
 
 export function getFilenameFromErrorStack(
   errorStack: string,
-  backendDistPath = 'packages/backend/dist/',
+  { lineNumber = 2, backendDistPath = 'packages/backend/dist/' },
 ) {
   if (!errorStack) {
     return FALLBACK;
   }
 
-  const line = arrayPickAt(errorStack.split('\n'), 2);
+  const line = arrayPickAt(errorStack.split('\n'), lineNumber);
 
   if (!line) {
     return 'N/A (line)';
