@@ -23,7 +23,7 @@ describe('getFilenameFromErrorStack', () => {
 
       const filename = getFilenameFromErrorStack(errorStack);
 
-      expect(filename).toBe('N/A (line)');
+      expect(filename).toBe('N/A (filename)');
     });
 
     it('should return the filename from the error stack', () => {
@@ -31,7 +31,7 @@ describe('getFilenameFromErrorStack', () => {
 
       const filename = getFilenameFromErrorStack(errorStack);
 
-      expect(filename).toBe('N/A (line)');
+      expect(filename).toBe('N/A (filename)');
     });
 
     it('should return N/A (filename)', () => {
