@@ -19,7 +19,7 @@ describe('getFilenameFromErrorStack', () => {
 
   describe('fallback', () => {
     it('should return the filename from the error stack', () => {
-      const errorStack = undefined;
+      const errorStack = undefined as unknown as NonNullable<Error['stack']>;
 
       const filename = getFilenameFromErrorStack(errorStack);
 

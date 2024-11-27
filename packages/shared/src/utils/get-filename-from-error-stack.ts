@@ -1,19 +1,28 @@
 import { arrayPickAt } from './array-pick-at';
 
-export function getFilenameFromErrorStack(errorStack?: string) {
-  const line = arrayPickAt(errorStack?.split('\n'), 2);
+const FALLBACK = 'N/A (filename)';
+
+export function getFilenameFromErrorStack(
+  errorStack: string,
+  backendDistPath = 'packages/backend/dist/',
+) {
+  if (!errorStack) {
+    return FALLBACK;
+  }
+
+  const line = arrayPickAt(errorStack.split('\n'), 2);
 
   if (!line) {
     return 'N/A (line)';
   }
 
   const filename = arrayPickAt(
-    arrayPickAt(line.split('packages/backend/dist/'), 1)?.split('.'),
+    arrayPickAt(line.split(backendDistPath), 1)?.split('.'),
     0,
   );
 
   if (!filename) {
-    return 'N/A (filename)';
+    return FALLBACK;
   }
 
   return filename;
