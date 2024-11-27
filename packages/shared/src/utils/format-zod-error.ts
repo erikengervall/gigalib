@@ -13,7 +13,7 @@ export function formatZodError(
   /**
    * The Zod model's name, E.g. "Person".
    */
-  modelName: string,
+  modelName?: string,
 ) {
   const { message, name } = fromZodError(zodError, {
     issueSeparator: '\n',
@@ -22,6 +22,11 @@ export function formatZodError(
     unionSeparator: '\n',
     maxIssuesInMessage: 100,
   });
+
+  if (!modelName) {
+    return `[${name}]
+${message}`;
+  }
 
   return `[${name} for "${modelName}"]
 ${message}`;

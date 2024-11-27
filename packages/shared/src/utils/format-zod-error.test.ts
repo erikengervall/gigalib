@@ -12,6 +12,17 @@ describe('formatZodError', () => {
   });
   const Options = z.union([z.literal('option-1'), z.literal('option-2')]);
 
+  it('should allow omitting the model name', () => {
+    const invalidPerson = Person.safeParse({ name: 1 });
+    if (invalidPerson.success) {
+      fail("Shouldn't reach this point");
+    }
+
+    const result = formatZodError(invalidPerson.error);
+
+    expect(result).toMatchSnapshot();
+  });
+
   it('should format a ZodError for a union', () => {
     const invalidOptions = Options.safeParse('not-an-option');
     if (invalidOptions.success) {

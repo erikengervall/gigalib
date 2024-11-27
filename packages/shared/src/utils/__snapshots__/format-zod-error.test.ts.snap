@@ -1,5 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`formatZodError should allow omitting the model name 1`] = `
+"[ZodValidationError]
+Expected string, received number at "name"
+Required at "age"
+Required at "nested""
+`;
+
 exports[`formatZodError should format a ZodError for a union 1`] = `
 "[ZodValidationError for "Options"]
 Invalid literal value, expected "option-1"
