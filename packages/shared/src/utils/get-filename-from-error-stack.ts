@@ -4,7 +4,16 @@ const FALLBACK = 'N/A (filename)';
 
 export function getFilenameFromErrorStack(
   errorStack: string,
-  { lineNumber = 2, backendDistPath = 'packages/backend/dist/' },
+  {
+    lineNumber = 2,
+    backendDistPath = 'packages/backend/dist/',
+  }: {
+    lineNumber?: number;
+    backendDistPath?: string;
+  } = {
+    lineNumber: 2,
+    backendDistPath: 'packages/backend/dist/',
+  },
 ) {
   if (!errorStack) {
     return FALLBACK;
