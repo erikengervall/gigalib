@@ -12,6 +12,7 @@ export * from './get-initials';
 export * from './get-random-number';
 export * from './lowercase';
 export * from './mock-node-packages';
+export * from './naive-deepclone';
 export * from './register-log-spies';
 export * from './reorderer';
 export * from './truncate-string';
